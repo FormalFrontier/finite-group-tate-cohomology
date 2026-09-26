@@ -17,7 +17,7 @@ checked-use client module and both zero-entry reexport roots.
 | Module | Main API |
 | --- | --- |
 | `FiniteGroupTateCohomology.Norm` | `normFromCoinvariants`, `normNatTrans`, `normNatTrans_app`, `quotientNorm`, `quotientNorm_mk`, `quotientNormNatTrans`, `quotientNormNatTrans_app` and their naturality lemmas. |
-| `FiniteGroupTateCohomology.Basic` | `tateOpcyclesIsoNegOne`, `tateCyclesIsoZero`, `normSequence`, `normSequence_exact`, its first mono/last epi, `tateCohomologyNegOneIsoKernelNorm`, `tateCohomologyZeroIsoCokernelNorm` and their natural isomorphisms of coefficient functors. |
+| `FiniteGroupTateCohomology.Basic` | `tateOpcyclesIsoNegOne`, `tateCyclesIsoZero`, `normSequence`, `normSequence_exact`, its first mono/last epi, `tateCohomologyNegOneIsoKernelNorm`, `tateCohomologyZeroIsoCokernelNorm`, their natural isomorphisms of coefficient functors and the two `*NatIso*_hom_app` component lemmas. |
 | `FiniteGroupTateCohomology.CyclicModelFunctor` | Fixed-element `Cyclic.normHomCompSubFunctor` / `subCompNormHomFunctor`, `evenModelFunctor` / `oddModelFunctor`, their maps, object/map equations and identity/composition laws. |
 | `FiniteGroupTateCohomology.CyclicPeriodicity` | `Cyclic.evenModel` / `oddModel`, generator-dependent model identifications, `tateCohomologyIsoEven` / `tateCohomologyIsoOdd`, `tateCohomologyParityIso` and `tateCohomologyPeriodicity` with inverse/telescoping laws. |
 
@@ -35,7 +35,12 @@ with these maps, also after ordinary functor whiskering. For example, the
 checked native client uses `Functor.whiskerRight_app`,
 `Functor.whiskerLeft_app` and `quotientNormNatTrans_app` to expose the residual
 norm supplied to a postcomposed functor. Neither component lemma requires
-access to a private definition.
+access to a private definition. The exceptional-degree
+`tateCohomologyNegOneNatIsoKernelNorm_hom_app` and
+`tateCohomologyZeroNatIsoCokernelNorm_hom_app` additionally identify each
+natural-isomorphism component with its objectwise comparison. They retain
+`Basic`'s same-universe assumptions; the ordinary native clients compose them
+with the kernel inclusion and cokernel projection.
 
 The fixed-`g` functors need only an element of a finite commutative group, **not
 a proof it generates**. Their even short complex is `A --N--> A --(g - 1)--> A`;
@@ -100,7 +105,7 @@ reviewed in ordinary PR15 and accepted at
 This ordinary acceptance does not replace or reopen the initial private
 publication. The mathematical-source checkpoint is
 `8766961817bb9a4f128693ea2e7169008f41920b` (tree
-`9598981ac8f135c4d14d6d4ff084bbfe0a6a4829`); the generated native
+`9598981ac8f135c4d14d6d4ff084bbfe0a6a4829`); the then-generated native
 reference binds those source bytes, not a self-referential final documentation
 commit. The ordinary review included the affected stored-proof-body checks;
 it does not itself establish a successor release or an official dependency pin.
@@ -110,6 +115,25 @@ and the commit downstream projects may pin. Worker-b Hive Task
 `2472c71f-90ec-4c30-a95c-e2686723a304`) prepared the component change;
 independent reviewer Task `hive-request-67fcf32c96c80dc37a81e1441777906aefd2f583`
 (UID `890e249d-1413-4c8b-8c49-4775a19d38c4`) supplied its ordinary review.
+
+**September 26, 2026 NatIso component preparation record:** At preparation, the
+accepted main/release-prep `069ffdffaacbeec5618f81c1f0f4cc80de0ee6c9`
+and official private-GitHub public head
+`19c1d8ce0f11e9ce7af8ce5ae1e2479aa7cd0796` share tree
+`ff9494e2b7142543991d0905e8255dc0d19a442e`. This new branch starts
+from the accepted main, not the older public pin. Its mathematical-source
+checkpoint `cba7734f0dddc4601fc1951d9eaca29a831e4bf7` (tree
+`52a73df34550707c12fa7d72aa82e705dbf3e69c`) adds only two
+proposition-level public component identities and six ordinary checked-use
+clients, authored by formalization-worker-b Hive Task
+`hive-request-45da6d9705021cb9a40f08828900872ae868196e` (UID
+`9224ba15-577c-47d1-a828-7954c81c6321`). The refreshed native reference
+binds those source bytes. At this preparation checkpoint, independent
+exact-candidate review and maintainer integration were pending; this dated
+record does not claim their completion. Later ordinary acceptance and official
+publication are established by external exact-commit records, not by this
+source checkpoint or its documentation labels. Downstream projects must use
+the commit identified by the applicable official release record.
 
 At this documentation author's September 25, 2026 snapshot, development PR12
 had **already** completed the bounded module migration, public examples and

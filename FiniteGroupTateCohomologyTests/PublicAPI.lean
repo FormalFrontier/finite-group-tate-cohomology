@@ -196,6 +196,42 @@ theorem zero_naturality (A B : Rep R G) (f : A ⟶ B) :
   (FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm
     (R := R) (G := G)).hom.naturality f
 
+/-- The negative-one natural component is the objectwise norm-kernel comparison. -/
+theorem negativeOne_component (A : Rep R G) :
+    (FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm
+      (R := R) (G := G)).hom.app A =
+      (FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm A).hom :=
+  FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm_hom_app A
+
+/-- The zero-degree natural component is the objectwise norm-cokernel comparison. -/
+theorem zero_component (A : Rep R G) :
+    (FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm
+      (R := R) (G := G)).hom.app A =
+      (FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm A).hom :=
+  FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm_hom_app A
+
+set_option backward.isDefEq.respectTransparency false in
+/-- The negative-one natural component commutes with the norm-kernel inclusion. -/
+theorem negativeOne_component_kernelInclusion (A : Rep R G) :
+    (FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm
+      (R := R) (G := G)).hom.app A ≫
+        kernel.ι (FiniteGroupTateCohomology.normFromCoinvariants A) =
+      (tateComplex A).homologyι (-1) ≫
+        (FiniteGroupTateCohomology.tateOpcyclesIsoNegOne A).hom := by
+  simpa only [negativeOne_component] using
+    FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm_hom_ι A
+
+set_option backward.isDefEq.respectTransparency false in
+/-- The zero-degree natural component commutes with the norm-cokernel projection. -/
+theorem zero_component_cokernelProjection (A : Rep R G) :
+    ((FiniteGroupTateCohomology.tateCyclesIsoZero A).inv ≫
+        (tateComplex A).homologyπ 0) ≫
+      (FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm
+        (R := R) (G := G)).hom.app A =
+      cokernel.π (FiniteGroupTateCohomology.normFromCoinvariants A) := by
+  simpa only [zero_component] using
+    FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm_π_hom A
+
 end Exceptional
 
 section Models
@@ -297,6 +333,22 @@ section Concrete
 /-- A nonzero coefficient representation of the nontrivial cyclic group of order two. -/
 abbrev cyclicRepresentation : Rep (ZMod 2) (Multiplicative (ZMod 2)) :=
   Rep.trivial (ZMod 2) (Multiplicative (ZMod 2)) (ZMod 2)
+
+/-- The norm-kernel natural component specializes to nontrivial cyclic coefficients. -/
+theorem concreteNegativeOne_component :
+    (FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm
+      (R := ZMod 2) (G := Multiplicative (ZMod 2))).hom.app cyclicRepresentation =
+      (FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm
+        cyclicRepresentation).hom :=
+  negativeOne_component cyclicRepresentation
+
+/-- The norm-cokernel natural component specializes to nontrivial cyclic coefficients. -/
+theorem concreteZero_component :
+    (FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm
+      (R := ZMod 2) (G := Multiplicative (ZMod 2))).hom.app cyclicRepresentation =
+      (FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm
+        cyclicRepresentation).hom :=
+  zero_component cyclicRepresentation
 
 /-- The norm descends equivariantly for the whole nontrivial order-two group. -/
 noncomputable def concreteQuotientNorm :

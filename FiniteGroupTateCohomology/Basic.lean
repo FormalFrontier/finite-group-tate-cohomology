@@ -448,4 +448,16 @@ noncomputable def tateCohomologyZeroNatIsoCokernelNorm :
             (normCokernelFunctor (R := R) (G := G)).map f) :=
               Category.assoc _ _ _)
 
+/-- The degree `-1` natural isomorphism has the kernel comparison as its component. -/
+lemma tateCohomologyNegOneNatIsoKernelNorm_hom_app (M : Rep R G) :
+    (tateCohomologyNegOneNatIsoKernelNorm (R := R) (G := G)).hom.app M =
+      (tateCohomologyNegOneIsoKernelNorm M).hom := by
+  rfl
+
+/-- The degree `0` natural isomorphism has the cokernel comparison as its component. -/
+lemma tateCohomologyZeroNatIsoCokernelNorm_hom_app (M : Rep R G) :
+    (tateCohomologyZeroNatIsoCokernelNorm (R := R) (G := G)).hom.app M =
+      (tateCohomologyZeroIsoCokernelNorm M).hom := by
+  rfl
+
 end FiniteGroupTateCohomology

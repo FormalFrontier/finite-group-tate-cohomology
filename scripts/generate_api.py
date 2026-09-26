@@ -21,8 +21,8 @@ import re
 
 
 TOOL = "97d4ecdfc8e09e7f511724c25e303d448de6a3db"
-SOURCE = "8766961817bb9a4f128693ea2e7169008f41920b"
-SOURCE_TREE = "9598981ac8f135c4d14d6d4ff084bbfe0a6a4829"
+SOURCE = "cba7734f0dddc4601fc1951d9eaca29a831e4bf7"
+SOURCE_TREE = "52a73df34550707c12fa7d72aa82e705dbf3e69c"
 MODULES = (
     "FiniteGroupTateCohomology.Norm",
     "FiniteGroupTateCohomology.Basic",
@@ -34,26 +34,26 @@ MODULES = (
 )
 SOURCE_INPUT_SHA256 = {
     "FiniteGroupTateCohomology/Norm.lean": "e080c2c64287f4122b3fe968e4c49a434f30ef55bf752dcc0a99a7757e3f15f5",
-    "FiniteGroupTateCohomology/Basic.lean": "167dacba4770f9821fb77786de672f7488f1ac01e04025912cc862e2a49346e3",
+    "FiniteGroupTateCohomology/Basic.lean": "aa5392ac3950b8dd368be265fdf9b17592c41b66e084498a26adc1365fc94d59",
     "FiniteGroupTateCohomology/CyclicModelFunctor.lean": "1bda4bef2301af3cbb47a24e748e6bff38269681a12450883313254f86774169",
     "FiniteGroupTateCohomology/CyclicPeriodicity.lean": "62644bc64a51795e2e19c43698b04caebfb45ee41c0859e2bb4c0d1bf771c0bc",
     "FiniteGroupTateCohomology.lean": "49d9297ce2abf6bdebe549f17f2638d75b18b875d6c0ca4c863ff754e8002516",
-    "FiniteGroupTateCohomologyTests/PublicAPI.lean": "41246c1f53e922990230bc14dafc5f685ea1bcca9636aab207c51d6375054df0",
+    "FiniteGroupTateCohomologyTests/PublicAPI.lean": "799b7736a331c76aa587d0edd73f81f5ed83fed7c858a791b9f3a44130e35c12",
     "FiniteGroupTateCohomologyTests.lean": "87ce4b0b1404ba2d7a200cd6f06849877e6220719095e6edda48aaffa81644a5",
     "lean-toolchain": "8190e75a201741065fe508b28955dd64dd72d090babe5f70ce6848879d68ae88",
     "lakefile.toml": "f8e58dc43fddfb3ed72bff133a1381aa7c71886742fa60db5fb1b1d2d9b7c3cd",
     "lake-manifest.json": "dae9638daf3d2259ec970343b33651a7471898691fa8b0fb0c4a26125d017691",
 }
 NATIVE_RECORD_SHA256 = {
-    "FiniteGroupTateCohomology.Norm": "c326d20575a0631aabbe56f6503675affa0ca8cba389b24166e23fff641fa769",
-    "FiniteGroupTateCohomology.Basic": "a8c882f5e95a4251acf69c5ec748524595f1f82180665068d5fdfb8574aab1aa",
-    "FiniteGroupTateCohomology.CyclicModelFunctor": "590ceb16d2f42d190ae9f376c1cd5a1553dbc0c0a0794130b07ab65f0c262355",
-    "FiniteGroupTateCohomology.CyclicPeriodicity": "ac40e311e1017a19c5e68c33c01fef1394e852f3d56028b6d134ff2192b15302",
+    "FiniteGroupTateCohomology.Norm": "041e41075bf7e66c9a715bb3111c373f4abebfd93da359b272ac9accacdc16fb",
+    "FiniteGroupTateCohomology.Basic": "ed3efbb92d93e0c042c852b1a8c1c8562ae378ca1f58cb3ab47af22563dadea0",
+    "FiniteGroupTateCohomology.CyclicModelFunctor": "d3b7aae601b9431d96032d8cf93228915f2f31d0fc1554c83da3b9f16046f318",
+    "FiniteGroupTateCohomology.CyclicPeriodicity": "51b369c3d0674eb83c503472d2b11cf0631959c3a6e27c8565d373aea9931151",
     "FiniteGroupTateCohomology": "43fc227272cfe8fccffe3d6eea512e7f5bda22871b9f10f3fa145e908b060105",
-    "FiniteGroupTateCohomologyTests.PublicAPI": "793f54fab579cdde5f4bd89a693930bde0ef87285805af469dc6d521f4dc48f9",
+    "FiniteGroupTateCohomologyTests.PublicAPI": "7c5b36731d427fb4552629afda90f1d8f8a762af62e6530b1474bb805ee1b850",
     "FiniteGroupTateCohomologyTests": "e6be71d4a6af564536fcee275e42c19a279b2941ad7c0fbe857b73e2ce6b3dda",
 }
-COUNTS = (15, 44, 20, 21, 0, 57, 0)
+COUNTS = (15, 46, 20, 21, 0, 63, 0)
 KINDS = ("def", "theorem", "instance")
 EXPECTED_INSTANCES = {
     "FiniteGroupTateCohomology.normSequence_mono_first": "CategoryTheory.Mono",
@@ -74,6 +74,10 @@ KEY_TOKENS = {
         ("{R : Type u}", "{H : Type v}", "[T.Normal]", "[Fintype ↥T]", "F.map"),
     "FiniteGroupTateCohomology.normSequence_exact":
         ("{R G : Type u}", "[Fintype G]", "(normSequence M).Exact"),
+    "FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm_hom_app":
+        ("{R G : Type u}", "(M : Rep R G)", "tateCohomologyNegOneIsoKernelNorm M"),
+    "FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm_hom_app":
+        ("{R G : Type u}", "(M : Rep R G)", "tateCohomologyZeroIsoCokernelNorm M"),
     "FiniteGroupTateCohomology.Cyclic.normHomCompSubMap":
         ("[CommGroup G]", "(g : G)", "(f : A ⟶ B)"),
     "FiniteGroupTateCohomology.Cyclic.evenModelFunctor":
@@ -298,8 +302,8 @@ def validate(records, raw_records, sources, revision):
                 "missing native instance declaration: " + module)
         require(digest(raw_records[module]) == NATIVE_RECORD_SHA256[module],
                 "native raw record differs from pinned tool/input: " + module)
-    require(len(all_names) == 157 and len(sections["production"]) == 100 and
-            len(sections["clients"]) == 57 and len(undocumented) == 54,
+    require(len(all_names) == 165 and len(sections["production"]) == 102 and
+            len(sections["clients"]) == 63 and len(undocumented) == 54,
             "mixed public/client/undocumented inventory differs")
     return sections
 
@@ -310,8 +314,8 @@ def render(records, raw_records, sources, revision):
              "Fixed Lean `v4.34.0-rc2`, mathlib `e37d88a26f3791ed5a93daa1f949af1021b8d103`",
              "and separately pinned doc-gen4 `" + TOOL + "`. Full displayed signatures",
              "retain all native implicit arguments, typeclasses and universe variables.",
-             "There are 100 production named declarations (including two named instances)",
-             "and 57 checked-use client declarations, across seven shipped modules.",
+             "There are 102 production named declarations (including two named instances)",
+             "and 63 checked-use client declarations, across seven shipped modules.",
              "The production and client reexport roots each have zero new named entries.",
              "The filtered native tables do **not** enumerate private declarations or",
              "generated proof bodies; this reference does not certify axioms, proofs,",
@@ -320,8 +324,8 @@ def render(records, raw_records, sources, revision):
              "**Native source docstring** reproduces a matched source comment;",
              "**Original catalogue explanation** is newly written here for an entry",
              "without a Lean docstring (including compiler-generated association laws).", ""]
-    for section, heading in (("production", "Production API (100 native named entries)"),
-                             ("clients", "Checked-use clients (57 native named entries)")):
+    for section, heading in (("production", "Production API (102 native named entries)"),
+                             ("clients", "Checked-use clients (63 native named entries)")):
         lines.extend(["## " + heading, ""])
         for row in sorted(sections[section], key=lambda item:
                           (MODULES.index(item["path"].removesuffix(".lean").replace("/", ".")),
@@ -388,8 +392,8 @@ def main():
     if not args.check:
         (root / "docs" / "API.md").write_bytes(api)
         (root / "docs" / "api-manifest.json").write_bytes(manifest)
-    print(json.dumps(dict(status="matched" if args.check else "generated", production=100,
-                          clients=57, instances=2, api_sha256=digest(api),
+    print(json.dumps(dict(status="matched" if args.check else "generated", production=102,
+                          clients=63, instances=2, api_sha256=digest(api),
                           proof_certification=False, release_acceptance=False)))
 
 
