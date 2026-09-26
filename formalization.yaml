@@ -1,0 +1,101 @@
+version: "v0.4"
+
+project:
+  name: Finite-group Tate cohomology
+  description: >-
+    Reusable Lean norms, exceptional Tate degrees, and objectwise additive
+    cyclic period-two comparisons for finite-group representations.
+  authors:
+    - Formal Frontier Agents
+  responsible_maintainers:
+    - Formal Frontier source-maintainer team (Beacon responsible for this unit)
+  license: Apache-2.0
+
+sources:
+  - title: Classical finite-group Tate cohomology, norm and additive cyclic periodicity
+    type: folklore
+    relationship: independently-proves
+    author_endorsement: n/a
+    note: >-
+      Standard mathematics, not a claim of completed correspondence with any
+      specific selected source; the formalization reuses mathlib's Tate complex.
+  - title: mathlib4 representation-theory Tate and finite-cyclic formal APIs
+    id: https://github.com/leanprover-community/mathlib4/tree/e37d88a26f3791ed5a93daa1f949af1021b8d103/Mathlib/RepresentationTheory/Homological
+    type: software
+    relationship: background
+    license: Apache-2.0
+    author_endorsement: n/a
+    note: >-
+      Reused as a pinned dependency, not vendored here; upstream file headers
+      credit their contributors, including Yunzhou Xie, Yaël Dillies and Amelia Livingston.
+
+automation:
+  methods:
+    - method: agent
+      framework: OpenAI Codex CLI with Formal Frontier Hive Tasks
+      tool_setup: Lean 4.34.0-rc2 and pinned mathlib4 with cache-first Lake builds
+      prompting_notes: >-
+        AI agents implemented, checked and reviewed distinct development units;
+        bounded module migration, checked public examples and metadata were
+        accepted through development PR12 at 9882255fffc9960eb01497ae2edce43ccf877408.
+        New native documentation and full release readiness still require fresh
+        exact-candidate independent review and owner acceptance.
+  notes: >-
+    Formal Frontier source maintainers retain mathematical acceptance and source
+    correspondence responsibility; AI assistance alone establishes neither.
+
+status:
+  scope: >-
+    Finite-group norm and exceptional degrees, quotient-equivariant norm for
+    finite normal subgroups, fixed-element cyclic model coefficient functors,
+    and objectwise all-integer additive cyclic period two with chosen generator.
+    At the September 25, 2026 documentation-author snapshot, first-release
+    certification and source-coverage decisions had not been made; later status
+    belongs to an external exact-candidate acceptance/publication record.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+  main_results:
+    - declaration: FiniteGroupTateCohomology.normSequence_exact
+      file: FiniteGroupTateCohomology/Basic.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+    - declaration: FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm
+      file: FiniteGroupTateCohomology/Basic.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+    - declaration: FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm
+      file: FiniteGroupTateCohomology/Basic.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+    - declaration: FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity
+      file: FiniteGroupTateCohomology/CyclicPeriodicity.lean
+      sorry_count: 0
+      axioms: [propext, Classical.choice, Quot.sound]
+
+fidelity:
+  divergences: >-
+    Norm supports independent universes; exceptional Tate comparisons use the
+    pinned same-universe mathlib boundary. Cyclic model coefficient maps are
+    natural for fixed elements, but comparison and periodicity isomorphisms are
+    objectwise and require an explicit generator where indicated.
+
+review:
+  status: agent-reviewed development mathematics and bounded PR12 readiness; new docs and first-release review pending at authoring on September 25, 2026
+  reviewers:
+    - Lattice (development PRs 3 and 8)
+    - Formal Frontier agents (development PRs 9 and 10)
+  notes: >-
+    PR12's independently reviewed bounded module migration, public examples
+    and metadata are present on the accepted development main at 9882255fffc9960eb01497ae2edce43ccf877408;
+    earlier reviews and PR12 do not cover these new generated native docs, the
+    full raw/private/stored-body proof audit, entire-artifact rights clearance,
+    first-release acceptance or source-specific correspondence. Later acceptance
+    or publication is recorded externally, not inferred from this file.
+
+acknowledgements: >-
+  Formal Frontier source maintainers and formalization workers, mathlib4
+  contributors and the Lean community are credited for their respective work.
