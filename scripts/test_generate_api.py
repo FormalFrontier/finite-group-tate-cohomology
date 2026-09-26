@@ -50,11 +50,20 @@ class NativeControls(unittest.TestCase):
     def test_exact_unmodified_native_inputs_and_manifest(self):
         markdown, manifest_raw = api.render(self.records, self.original, self.sources, api.SOURCE)
         manifest = json.loads(manifest_raw)
-        self.assertEqual(len(manifest["production_declarations"]), 98)
-        self.assertEqual(len(manifest["public_client_declarations"]), 50)
+        self.assertEqual(len(manifest["production_declarations"]), 100)
+        self.assertEqual(len(manifest["public_client_declarations"]), 57)
         self.assertEqual(set(manifest["instance_declarations"]), set(api.EXPECTED_INSTANCES))
         self.assertEqual(manifest["undocumented_count"], 54)
-        self.assertEqual(markdown.count(b"\n### "), 148)
+        self.assertEqual(markdown.count(b"\n### "), 157)
+        new_components = {"FiniteGroupTateCohomology.normNatTrans_app",
+                          "FiniteGroupTateCohomology.quotientNormNatTrans_app"}
+        self.assertTrue(new_components <= set(manifest["production_declarations"]))
+        signatures = {row["info"]["name"]: api.Header(row["header"]).rendered()
+                      for row in self.records[api.MODULES[0]]["declarations"]}
+        self.assertNotIn("[Fintype H]", signatures[
+            "FiniteGroupTateCohomology.quotientNormNatTrans_app"])
+        self.assertIn("FiniteGroupTateCohomologyTests.quotientNorm_whiskered_component",
+                      manifest["public_client_declarations"])
         self.assertEqual(manifest["native_record_sha256"], api.NATIVE_RECORD_SHA256)
         self.assertEqual(manifest["inputs"], api.SOURCE_INPUT_SHA256)
         self.assertEqual(manifest["api_sha256"], api.digest(markdown))
@@ -105,6 +114,7 @@ class NativeControls(unittest.TestCase):
         for name, token in (("FiniteGroupTateCohomology.normFromCoinvariants", "{G : Type v}"),
                             ("FiniteGroupTateCohomology.quotientNorm", "[S.Normal]"),
                             ("FiniteGroupTateCohomology.quotientNorm", "[Fintype ↥S]"),
+                            ("FiniteGroupTateCohomology.quotientNormNatTrans_app", "[Fintype ↥S]"),
                             ("FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity",
                              "(hg : ∀ (x : G), x ∈ Subgroup.zpowers g)")):
             module = periodicity if ".Cyclic." in name else norm

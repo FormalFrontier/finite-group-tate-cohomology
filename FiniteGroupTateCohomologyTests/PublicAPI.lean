@@ -33,6 +33,13 @@ noncomputable def normIndependentUniverses (A : Rep.{w} R H) [Fintype H] :
     (Rep.coinvariantsFunctor R H).obj A ⟶ (Rep.invariantsFunctor R H).obj A :=
   FiniteGroupTateCohomology.normFromCoinvariants A
 
+/-- The ordinary natural transformation has the advertised component with
+independent scalar, group and carrier universes. -/
+theorem norm_transformation_component [Fintype H] (A : Rep.{w} R H) :
+    (FiniteGroupTateCohomology.normNatTrans (R := R) (G := H)).app A =
+      FiniteGroupTateCohomology.normFromCoinvariants A :=
+  FiniteGroupTateCohomology.normNatTrans_app A
+
 /-- The ordinary norm commutes with independent-universe coefficient maps. -/
 theorem norm_independentNaturality [Fintype H] {A B : Rep.{w} R H} (f : A ⟶ B) :
     FiniteGroupTateCohomology.normFromCoinvariants A ≫
@@ -68,6 +75,45 @@ noncomputable def quotientNormNaturalTransformation :
     Rep.quotientToCoinvariantsFunctor R S ⟶
       Rep.quotientToInvariantsFunctor R S :=
   FiniteGroupTateCohomology.quotientNormNatTrans S
+
+/-- The residual natural transformation has the quotient norm component,
+without requiring the ambient group to be finite. -/
+theorem quotientNorm_transformation_component (A : Rep.{w} R H) :
+    (FiniteGroupTateCohomology.quotientNormNatTrans (R := R) S).app A =
+      FiniteGroupTateCohomology.quotientNorm A S :=
+  FiniteGroupTateCohomology.quotientNormNatTrans_app A S
+
+/-- The natural transformation computes on a coinvariant representative. -/
+theorem quotientNorm_transformation_representative (A : Rep.{w} R H) (x : A) :
+    (FiniteGroupTateCohomology.quotientNormNatTrans (R := R) S).app A
+        (Representation.Coinvariants.mk (A.ρ.comp S.subtype) x) =
+      ⟨Representation.norm (A.ρ.comp S.subtype) x,
+        fun s ↦ Representation.self_norm_apply (A.ρ.comp S.subtype) s x⟩ := by
+  rw [FiniteGroupTateCohomology.quotientNormNatTrans_app]
+  exact FiniteGroupTateCohomology.quotientNorm_mk A S x
+
+/-- The residual naturality square reduces to the maps' naturality square. -/
+theorem quotientNorm_transformation_coefficients {A B : Rep.{w} R H} (f : A ⟶ B) :
+    (FiniteGroupTateCohomology.quotientNormNatTrans (R := R) S).app A ≫
+        (Rep.quotientToInvariantsFunctor R S).map f =
+      (Rep.quotientToCoinvariantsFunctor R S).map f ≫
+        (FiniteGroupTateCohomology.quotientNormNatTrans (R := R) S).app B := by
+  simpa only [FiniteGroupTateCohomology.quotientNormNatTrans_app] using
+    (FiniteGroupTateCohomology.quotientNormNatTrans (R := R) S).naturality f |>.symm
+
+omit [Fintype S] in
+/-- Both whiskerings expose the residual norm as the map supplied to the
+postcomposed functor, as in finite-level deflation. -/
+theorem quotientNorm_whiskered_component
+    (T : Subgroup (H ⧸ S)) [T.Normal] [Fintype T]
+    (F : Rep R ((H ⧸ S) ⧸ T) ⥤ ModuleCat R) (A : Rep.{w} R H) :
+    (Functor.whiskerRight
+        (Functor.whiskerLeft (Rep.quotientToInvariantsFunctor R S)
+          (FiniteGroupTateCohomology.quotientNormNatTrans (R := R) T)) F).app A =
+      F.map (FiniteGroupTateCohomology.quotientNorm (A.quotientToInvariants S) T) := by
+  rw [Functor.whiskerRight_app, Functor.whiskerLeft_app,
+    FiniteGroupTateCohomology.quotientNormNatTrans_app]
+  rfl
 
 end Norm
 
@@ -259,6 +305,22 @@ noncomputable def concreteQuotientNorm :
   by
     classical
     exact FiniteGroupTateCohomology.quotientNorm cyclicRepresentation ⊤
+
+/-- The whole order-two subgroup supplies a nontrivial concrete component. -/
+theorem concreteQuotientNorm_component
+    [Fintype (⊤ : Subgroup (Multiplicative (ZMod 2)))] :
+    (FiniteGroupTateCohomology.quotientNormNatTrans (R := ZMod 2)
+        (⊤ : Subgroup (Multiplicative (ZMod 2)))).app cyclicRepresentation =
+      FiniteGroupTateCohomology.quotientNorm cyclicRepresentation ⊤ := by
+  classical
+  exact FiniteGroupTateCohomology.quotientNormNatTrans_app _ _
+
+/-- The component contract also applies to the trivial group and zero ring. -/
+theorem degenerateNorm_component :
+    (FiniteGroupTateCohomology.normNatTrans (R := PUnit) (G := PUnit)).app
+        (Rep.trivial PUnit PUnit PUnit) =
+      FiniteGroupTateCohomology.normFromCoinvariants (Rep.trivial PUnit PUnit PUnit) :=
+  FiniteGroupTateCohomology.normNatTrans_app _
 
 /-- The chosen nonidentity element really generates the cyclic group of order two. -/
 theorem twoGenerator (x : Multiplicative (ZMod 2)) :

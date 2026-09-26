@@ -38,8 +38,12 @@ automation:
         AI agents implemented, checked and reviewed distinct development units;
         bounded module migration, checked public examples and metadata were
         accepted through development PR12 at 9882255fffc9960eb01497ae2edce43ccf877408.
-        New native documentation and full release readiness still require fresh
-        exact-candidate independent review and owner acceptance.
+        This September 25, 2026 historical note precedes initial official
+        publication. Worker-b Hive Task hive-request-67cef5e3f1493ec7a13f1ab6f26550efcf9464ac
+        (UID 2472c71f-90ec-4c30-a95c-e2686723a304) prepared the
+        September 26, 2026 norm-component API successor. Its ordinary PR15
+        review included affected stored-proof-body checks, followed by maintainer
+        acceptance at dd636c3c10969699a7e351847590ffc0600314ff.
   notes: >-
     Formal Frontier source maintainers retain mathematical acceptance and source
     correspondence responsibility; AI assistance alone establishes neither.
@@ -51,7 +55,13 @@ status:
     and objectwise all-integer additive cyclic period two with chosen generator.
     At the September 25, 2026 documentation-author snapshot, first-release
     certification and source-coverage decisions had not been made; later status
-    belongs to an external exact-candidate acceptance/publication record.
+    belongs to an external exact-candidate acceptance/publication record. The
+    September 26, 2026 component-API changes were independently reviewed and
+    accepted as ordinary development at dd636c3c10969699a7e351847590ffc0600314ff;
+    ordinary acceptance is not an official release or dependency pin. Initial
+    accepted ordinary main 61577f7cf2e02715f621a724aa692921ab6bbad9
+    and official public-release 65002a587774fa31cd237ab296c79258ceebab3f
+    share the preceding tree ceb832a55e50a33fe1132f17960ffe9d046a3f24.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms:
@@ -84,17 +94,26 @@ fidelity:
     objectwise and require an explicit generator where indicated.
 
 review:
-  status: agent-reviewed development mathematics and bounded PR12 readiness; new docs and first-release review pending at authoring on September 25, 2026
+  status: >-
+    Independently reviewed and maintainer-accepted ordinary mathematics through
+    the September 26, 2026 component API; exact-artifact release status is
+    recorded externally.
   reviewers:
     - Lattice (development PRs 3 and 8)
     - Formal Frontier agents (development PRs 9 and 10)
+    - >-
+      Formalization Worker A, ordinary PR15,
+      Task hive-request-67fcf32c96c80dc37a81e1441777906aefd2f583,
+      UID 890e249d-1413-4c8b-8c49-4775a19d38c4
   notes: >-
     PR12's independently reviewed bounded module migration, public examples
     and metadata are present on the accepted development main at 9882255fffc9960eb01497ae2edce43ccf877408;
-    earlier reviews and PR12 do not cover these new generated native docs, the
-    full raw/private/stored-body proof audit, entire-artifact rights clearance,
-    first-release acceptance or source-specific correspondence. Later acceptance
-    or publication is recorded externally, not inferred from this file.
+    Earlier reviews and PR12 do not cover the later norm-component API or its
+    regenerated native docs. The separate ordinary PR15 review and maintainer
+    acceptance bind dd636c3c10969699a7e351847590ffc0600314ff, including 96 freshly
+    checked affected and 206 unchanged joined project stored bodies. Exact-artifact
+    release approval, publication and whole-history rights decisions remain
+    separate external records; no source-specific correspondence is certified here.
 
 acknowledgements: >-
   Formal Frontier source maintainers and formalization workers, mathlib4

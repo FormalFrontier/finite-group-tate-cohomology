@@ -66,10 +66,17 @@ lemma normFromCoinvariants_naturality {M N : Rep.{w} R G} (f : M ⟶ N) :
   exact congrArg Rep.Hom.toModuleCatHom (Rep.norm_comm f).symm
 
 /-- The norm from coinvariants to invariants, natural in the representation. -/
+@[expose]
 noncomputable def normNatTrans :
     Rep.coinvariantsFunctor R G ⟶ Rep.invariantsFunctor R G where
   app := normFromCoinvariants
   naturality _ _ f := (normFromCoinvariants_naturality f).symm
+
+/-- The component of the norm natural transformation is the norm map. -/
+@[simp]
+lemma normNatTrans_app (M : Rep.{w} R G) :
+    (normNatTrans (R := R) (G := G)).app M = normFromCoinvariants M :=
+  rfl
 
 section Quotient
 
@@ -126,11 +133,19 @@ lemma quotientNorm_naturality {B : Rep.{w} R H} (f : A ⟶ B) :
 
 /-- The residual-quotient-equivariant norm, natural in the ambient
 representation. -/
+@[expose]
 noncomputable def quotientNormNatTrans :
     Rep.quotientToCoinvariantsFunctor R S ⟶
       Rep.quotientToInvariantsFunctor R S where
   app := fun A => quotientNorm A S
   naturality _ _ f := (quotientNorm_naturality _ _ f).symm
+
+/-- The component of the quotient-equivariant norm natural transformation is
+the quotient-equivariant norm map, with no finiteness assumption on `H`. -/
+@[simp]
+lemma quotientNormNatTrans_app :
+    (quotientNormNatTrans (R := R) S).app A = quotientNorm A S :=
+  rfl
 
 end Quotient
 

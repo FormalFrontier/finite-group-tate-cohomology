@@ -1,13 +1,17 @@
 # Native reference and reproducibility
 
 The [complete mixed-kind reference](API.md) and [data manifest](api-manifest.json)
-cover **all seven shipped Lean modules** on the frozen development input
-`9882255fffc9960eb01497ae2edce43ccf877408` (tree
-`f813d0f13b34648a0953cd114c08b6b42eb83bd1`): four production leaves,
-their zero-entry public reexport root, a checked-use client leaf and its
+cover **all seven shipped Lean modules** on the component successor's
+frozen mathematical-source checkpoint `8766961817bb9a4f128693ea2e7169008f41920b`
+(tree `9598981ac8f135c4d14d6d4ff084bbfe0a6a4829`), based on accepted
+ordinary `61577f7cf2e02715f621a724aa692921ab6bbad9`. The successor was
+independently reviewed and accepted as ordinary development at
+`dd636c3c10969699a7e351847590ffc0600314ff` on September 26, 2026;
+this is not a self-certification of any release. The modules are four production
+leaves, their zero-entry public reexport root, a checked-use client leaf and its
 zero-entry root. The pinned native **declarations and instances tables** contain
-98 production named entries (37 definitions, 59 theorems and two named
-instances) and 50 client entries (18 definitions and 32 theorems). The native
+100 production named entries (37 definitions, 61 theorems and two named
+instances) and 57 client entries (18 definitions and 39 theorems). The native
 kind `def` also covers source `abbrev`s. Their full displayed signatures and
 source anchors are retained, including compiler-generated `@[reassoc]` laws.
 Exactly 54 production entries lack source docstrings (9 Norm, 29 Basic, 12
@@ -15,7 +19,7 @@ CyclicModelFunctor, four CyclicPeriodicity); each has a clearly identified
 **original catalogue explanation, not a fabricated Lean docstring**. All other
 entry descriptions are checked against the matching original source comments.
 No entry in these seven records imported an upstream generated boilerplate
-docstring: all 94 present entry docs match this project's source comments.
+docstring: all 103 present entry docs match this project's source comments.
 No dependency docstrings, native website, JS, fonts or HTML are bundled.
 
 This is a **public/native filtered** reference, not a census of private
@@ -23,19 +27,27 @@ declarations or of generated proof fields. Source contains 17 explicitly
 `private` helpers; compiler-generated/private proofs add further declarations.
 The previously reported 293 imported + 106 source-private + 14 upstream + 26
 client `#print axioms` invocations overlap; **439 printings are not 439 unique
-proof declarations** and do not certify a full raw or stored-body audit. An
-independent full audit and proof-body binding remain necessary for release.
+proof declarations** and belong to the prior accepted input. That historical
+293-raw/body audit does not transfer automatically to new expressions in Norm
+or the checked-use client; the exact changed module/import graph and declaration
+inventory are retained on the separate successor evidence branch. The ordinary
+PR15 review checked 96 affected stored bodies and joined 206 unchanged prior
+bodies, for 302 project bodies on that exact input. Those completed checks and
+ordinary maintainer acceptance do not replace exact-artifact release review or
+justify transferring evidence to changed proof/dependency inputs.
 The default lint may be clean while optional `docBlameThm` still identifies
 54 public/associated-equation entries (9/29/12/4 respectively). These notes
-make the documentation gap visible, not silently close that lint. A reviewer
-must assess whether the generated association laws need no separate source
-docstrings, and whether remaining meaningful public lemmas should instead get
-native comments in a later, separately reviewed Lean change; this scoped docs
-candidate cannot change Lean.
+make the documentation gap visible, not silently close that lint. Independent
+ordinary review retained this NONPASS with bounded reasons for the existing
+direct, general and generated sibling declarations and their catalogue notes.
+Later source-docstring improvements remain separately reviewable Lean changes;
+neither this disposition nor a release record reclassifies the optional lint
+as passing.
 
 ## Frozen inputs and tool
 
-The ten unchanged `.lean`/pin/config SHA-256 hashes are fixed independently in
+The ten `.lean`/pin/config SHA-256 hashes (two changed Lean files and eight
+unchanged inputs relative to the accepted base) are fixed independently in
 [`scripts/generate_api.py`](../scripts/generate_api.py) and restated in the
 [manifest](api-manifest.json). The fixed historical commit/tree are **labels
 for analyzed mathematical inputs**, not claims about a future documentation
@@ -70,7 +82,7 @@ external directory:
 ```sh
 TOOL=/path/to/separate/doc-gen4/.lake/build/bin/doc-gen4
 OUT=/path/to/fresh/native-output
-REV=9882255fffc9960eb01497ae2edce43ccf877408
+REV=8766961817bb9a4f128693ea2e7169008f41920b
 mkdir -p "$OUT/build" "$OUT/render" "$OUT/native-input"
 for module in FiniteGroupTateCohomology.Norm FiniteGroupTateCohomology.Basic \
               FiniteGroupTateCohomology.CyclicModelFunctor \
@@ -138,8 +150,11 @@ Apache-2.0 project contributions with no invented owner; see the exact
 `FormalFrontier/polynomial-root-stability` generator/test expressions at
 `95ac896f81a3190b2634a4246a3e924d2a267a61` (themselves adaptations
 from Anchor's ideal-completion Markdown recipe at
-`f0c8c34386109116e4912fb425a8ad15d9dc42a4`). Worker-b authored this
-mixed-kind, seven-module adaptation and its original catalogue notes. Those
+`f0c8c34386109116e4912fb425a8ad15d9dc42a4`). Worker-b authored the
+original mixed-kind, seven-module adaptation and its catalogue notes. The
+present successor generator, tests and documentation were updated by worker-b
+Hive Task `hive-request-67cef5e3f1493ec7a13f1ab6f26550efcf9464ac`
+(UID `2472c71f-90ec-4c30-a95c-e2686723a304`). Those
 adapted project files carry the donor's Apache-2.0 SPDX expression and
 contributor credit; no copyright owner is asserted. Native signatures cite
 types from Lean/mathlib but **do not copy upstream dependency docstrings**;

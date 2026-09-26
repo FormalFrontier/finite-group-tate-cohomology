@@ -16,7 +16,7 @@ checked-use client module and both zero-entry reexport roots.
 
 | Module | Main API |
 | --- | --- |
-| `FiniteGroupTateCohomology.Norm` | `normFromCoinvariants`, `normNatTrans`, `quotientNorm`, `quotientNorm_mk`, `quotientNormNatTrans` and their naturality lemmas. |
+| `FiniteGroupTateCohomology.Norm` | `normFromCoinvariants`, `normNatTrans`, `normNatTrans_app`, `quotientNorm`, `quotientNorm_mk`, `quotientNormNatTrans`, `quotientNormNatTrans_app` and their naturality lemmas. |
 | `FiniteGroupTateCohomology.Basic` | `tateOpcyclesIsoNegOne`, `tateCyclesIsoZero`, `normSequence`, `normSequence_exact`, its first mono/last epi, `tateCohomologyNegOneIsoKernelNorm`, `tateCohomologyZeroIsoCokernelNorm` and their natural isomorphisms of coefficient functors. |
 | `FiniteGroupTateCohomology.CyclicModelFunctor` | Fixed-element `Cyclic.normHomCompSubFunctor` / `subCompNormHomFunctor`, `evenModelFunctor` / `oddModelFunctor`, their maps, object/map equations and identity/composition laws. |
 | `FiniteGroupTateCohomology.CyclicPeriodicity` | `Cyclic.evenModel` / `oddModel`, generator-dependent model identifications, `tateCohomologyIsoEven` / `tateCohomologyIsoOdd`, `tateCohomologyParityIso` and `tateCohomologyPeriodicity` with inverse/telescoping laws. |
@@ -30,6 +30,12 @@ subgroup of an arbitrary ambient group**; neither ambient finiteness nor
 commutativity is assumed. The exceptional-degree API in `Basic` has the pinned
 Tate-complex *same-universe* boundary. No field, nontriviality or characteristic
 hypothesis is imposed on these theorems.
+The two public `*_app` lemmas identify the natural-transformation components
+with these maps, also after ordinary functor whiskering. For example, the
+checked native client uses `Functor.whiskerRight_app`,
+`Functor.whiskerLeft_app` and `quotientNormNatTrans_app` to expose the residual
+norm supplied to a postcomposed functor. Neither component lemma requires
+access to a private definition.
 
 The fixed-`g` functors need only an element of a finite commutative group, **not
 a proof it generates**. Their even short complex is `A --N--> A --(g - 1)--> A`;
@@ -47,7 +53,8 @@ see [`FiniteGroupTateCohomologyTests/PublicAPI.lean`](FiniteGroupTateCohomologyT
 Its order-two group and coefficients are genuinely nontrivial, its zero
 coefficient endomorphism is **not** the identity, and its finite normal
 subgroup example uses the **whole** group, not a proper subgroup. Further
-clients cover degrees `-2` through `2` and zero-ring/trivial-group cases;
+clients cover independent universes, norm components and their naturality,
+representatives and whiskering, degrees `-2` through `2`, and zero-ring/trivial-group cases;
 they are checked uses, not new production theorems.
 Applications may import the
 root or an individual module without importing private implementation bodies.
@@ -82,6 +89,27 @@ module for a narrower dependency. Downstream users must pin a reviewed release
 before treating any development commit as a versioned dependency.
 
 ## Scope and provenance
+
+**September 26, 2026 ordinary component-API milestone:** The initial accepted
+ordinary
+`61577f7cf2e02715f621a724aa692921ab6bbad9` and official `public-release`
+`65002a587774fa31cd237ab296c79258ceebab3f` have the same mathematical
+tree. The subsequent component API and checked-use clients were independently
+reviewed in ordinary PR15 and accepted at
+`dd636c3c10969699a7e351847590ffc0600314ff` on September 26, 2026.
+This ordinary acceptance does not replace or reopen the initial private
+publication. The mathematical-source checkpoint is
+`8766961817bb9a4f128693ea2e7169008f41920b` (tree
+`9598981ac8f135c4d14d6d4ff084bbfe0a6a4829`); the generated native
+reference binds those source bytes, not a self-referential final documentation
+commit. The ordinary review included the affected stored-proof-body checks;
+it does not itself establish a successor release or an official dependency pin.
+An external exact-artifact release record establishes any subsequent publication
+and the commit downstream projects may pin. Worker-b Hive Task
+`hive-request-67cef5e3f1493ec7a13f1ab6f26550efcf9464ac` (UID
+`2472c71f-90ec-4c30-a95c-e2686723a304`) prepared the component change;
+independent reviewer Task `hive-request-67fcf32c96c80dc37a81e1441777906aefd2f583`
+(UID `890e249d-1413-4c8b-8c49-4775a19d38c4`) supplied its ordinary review.
 
 At this documentation author's September 25, 2026 snapshot, development PR12
 had **already** completed the bounded module migration, public examples and
@@ -121,19 +149,21 @@ Livingston). Upstream authors and notices remain with their upstream material;
 this project's license does not supersede any third-party rights. AI-assisted
 agents contributed formalization, examples and documentation. Checked Lean proofs
 and independent reviews, not AI authorship, determine mathematical status;
-development review is not review or clearance of this documentation candidate.
+ordinary development review is distinct from exact-artifact release review.
 The native reference carries matched original source docstrings and original
 catalogue notes; its adapter credits the accepted polynomial-root-stability
 donor and its earlier Anchor expression origin in [`docs/README.md`](docs/README.md).
-At this author's dated snapshot, complete rights/provenance and redistribution
-review of the entire artifact and eventual published history still remained
-to be performed independently. Source-specific correspondence and coverage
-belong in their source repositories.
+At that earlier author's dated snapshot, complete rights/provenance and
+redistribution review remained pending; its later status is established by
+external exact-candidate records, not retroactively by that snapshot. This
+successor's release review remains a distinct exact-artifact decision.
+Source-specific correspondence and coverage belong in their source repositories.
 
-## Measured build and documentation baseline
+## Measured initial-release preparation baseline (September 25, 2026)
 
-On September 25, 2026, in a fresh checkout of the ten unchanged source/pin
-inputs above, Lean `v4.34.0-rc2`, pinned mathlib and **successfully fetched
+On September 25, 2026, in a fresh checkout of the ten then-current source/pin
+inputs at `9882255fffc9960eb01497ae2edce43ccf877408`, Lean `v4.34.0-rc2`,
+pinned mathlib and **successfully fetched
 8,892 precompiled cache artifacts** preceded the warning-fatal default build.
 With `LEAN_NUM_THREADS=2` (and no `LAKE_JOBS` set), `lake --wfail build`
 completed **2,432 jobs in 15.045 s real** (18.051 s user, 4.655 s system).
