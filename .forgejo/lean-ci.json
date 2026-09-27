@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "mode": "strict",
+  "projects": [
+    {
+      "path": ".",
+      "targets": [
+        "FiniteGroupTateCohomology",
+        "FiniteGroupTateCohomologyTests"
+      ]
+    }
+  ],
+  "docs_only_paths": []
+}
