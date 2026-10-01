@@ -3,7 +3,7 @@
 # Authors: Formal Frontier Agents
 """Bounded mixed-kind native doc-gen4 reference for finite-group Tate cohomology.
 
-Adapted by worker-b from the accepted PolynomialRootStability donor generator at
+Formal Frontier agents adapted the accepted PolynomialRootStability donor generator at
 95ac896f81a3190b2634a4246a3e924d2a267a61, itself adapted from Anchor's
 ideal-completion Markdown recipe at f0c8c34386109116e4912fb425a8ad15d9dc42a4.
 The fixed records are documentation input, never a proof or release certificate.
@@ -23,6 +23,7 @@ import re
 TOOL = "97d4ecdfc8e09e7f511724c25e303d448de6a3db"
 SOURCE = "cba7734f0dddc4601fc1951d9eaca29a831e4bf7"
 SOURCE_TREE = "52a73df34550707c12fa7d72aa82e705dbf3e69c"
+OFFICIAL_SOURCE = "1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c"
 MODULES = (
     "FiniteGroupTateCohomology.Norm",
     "FiniteGroupTateCohomology.Basic",
@@ -320,7 +321,12 @@ def render(records, raw_records, sources, revision):
              "The filtered native tables do **not** enumerate private declarations or",
              "generated proof bodies; this reference does not certify axioms, proofs,",
              "source coverage, rights or a release. [Reproduce and assess provenance](README.md).", "",
-             "Source links point only to the matching `.lean` files shipped here.",
+             "Native records analyze source checkpoint `" + SOURCE + "`",
+             "(tree `" + SOURCE_TREE + "`). Historical **Source** links use the",
+             "byte-identical official publication `" + OFFICIAL_SOURCE + "`.",
+             "They do not point to this checkout's corrected-header sources.",
+             "Local module links navigate current files; see the reproduction guide for",
+             "the exact historical inputs and optional source-only replay.",
              "**Native source docstring** reproduces a matched source comment;",
              "**Original catalogue explanation** is newly written here for an entry",
              "without a Lean docstring (including compiler-generated association laws).", ""]
@@ -337,7 +343,7 @@ def render(records, raw_records, sources, revision):
             else:
                 lines.extend(["**Original catalogue explanation (not a Lean docstring):** " +
                               row["note"], ""])
-            lines.extend([f"[Source](../{row['path']}#L{row['line']}) "
+            lines.extend([f"[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/{OFFICIAL_SOURCE}/{row['path']}#L{row['line']}) "
                           "(native source start line; generated association laws point to their source lemma).", ""])
     markdown = "\n".join(lines).encode("utf-8")
     manifest = dict(format=2, generator="scripts/generate_api.py", docgen_revision=TOOL,

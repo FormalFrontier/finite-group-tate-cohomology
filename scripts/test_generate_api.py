@@ -3,7 +3,7 @@
 # Authors: Formal Frontier Agents
 """Data-only native-record corruption tests; no synthetic fixture proves Lean facts.
 
-Adapted by worker-b from the accepted PolynomialRootStability test pattern at
+Formal Frontier agents adapted the accepted PolynomialRootStability test pattern at
 95ac896f81a3190b2634a4246a3e924d2a267a61. Supply the independently
 retained seven original native records; no record is shipped with these tests.
 """
@@ -75,6 +75,11 @@ class NativeControls(unittest.TestCase):
         self.assertEqual(manifest["api_sha256"], api.digest(markdown))
         self.assertEqual((ROOT / "docs/API.md").read_bytes(), markdown)
         self.assertEqual((ROOT / "docs/api-manifest.json").read_bytes(), manifest_raw)
+        source_prefix = ("[Source](https://github.com/FormalFrontier/"
+                         "finite-group-tate-cohomology/blob/" + api.OFFICIAL_SOURCE + "/").encode()
+        self.assertEqual(markdown.count(source_prefix), 165)
+        self.assertNotIn(b"[Source](../", markdown)
+        self.assertIn(api.SOURCE.encode(), markdown)
         self.assertNotIn(b"example.invalid", markdown + manifest_raw)
         self.assertNotIn(b"forgejo.vpn", markdown + manifest_raw)
         self.assertFalse(manifest["proof_certification"] or manifest["release_acceptance"])

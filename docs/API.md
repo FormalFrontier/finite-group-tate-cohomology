@@ -10,7 +10,12 @@ The filtered native tables do **not** enumerate private declarations or
 generated proof bodies; this reference does not certify axioms, proofs,
 source coverage, rights or a release. [Reproduce and assess provenance](README.md).
 
-Source links point only to the matching `.lean` files shipped here.
+Native records analyze source checkpoint `cba7734f0dddc4601fc1951d9eaca29a831e4bf7`
+(tree `52a73df34550707c12fa7d72aa82e705dbf3e69c`). Historical **Source** links use the
+byte-identical official publication `1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c`.
+They do not point to this checkout's corrected-header sources.
+Local module links navigate current files; see the reproduction guide for
+the exact historical inputs and optional source-only replay.
 **Native source docstring** reproduces a matched source comment;
 **Original catalogue explanation** is newly written here for an entry
 without a Lean docstring (including compiler-generated association laws).
@@ -28,7 +33,7 @@ noncomputable def FiniteGroupTateCohomology.normFromCoinvariants {R : Type u} {G
 **Native source docstring:** The norm map on a representation, descended from coinvariants and
 corestricted to invariants.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L29) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L29) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.invariantsMap_inclusion
 
@@ -40,7 +45,7 @@ theorem FiniteGroupTateCohomology.invariantsMap_inclusion {R : Type u} {G : Type
 
 **Original catalogue explanation (not a Lean docstring):** A coefficient morphism commutes with the inclusion of invariant vectors.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L39) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L39) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.invariantsMap_inclusion_assoc
 
@@ -52,7 +57,7 @@ theorem FiniteGroupTateCohomology.invariantsMap_inclusion_assoc {R : Type u} {G 
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `invariantsMap_inclusion`. A coefficient morphism commutes with the inclusion of invariant vectors.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L39) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L39) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.coinvariantsMk_normFromCoinvariants_inclusion
 
@@ -64,7 +69,7 @@ theorem FiniteGroupTateCohomology.coinvariantsMk_normFromCoinvariants_inclusion 
 
 **Original catalogue explanation (not a Lean docstring):** Composing the coinvariants quotient with the norm and invariant inclusion recovers the representation norm.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L46) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L46) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.coinvariantsMk_normFromCoinvariants_inclusion_assoc
 
@@ -76,7 +81,7 @@ theorem FiniteGroupTateCohomology.coinvariantsMk_normFromCoinvariants_inclusion_
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `coinvariantsMk_normFromCoinvariants_inclusion`. Composing the coinvariants quotient with the norm and invariant inclusion recovers the representation norm.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L46) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L46) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normFromCoinvariants_naturality
 
@@ -88,7 +93,7 @@ theorem FiniteGroupTateCohomology.normFromCoinvariants_naturality {R : Type u} {
 
 **Original catalogue explanation (not a Lean docstring):** The ordinary norm commutes with coefficient morphisms, giving the natural-transformation equation.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L54) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L54) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normFromCoinvariants_naturality_assoc
 
@@ -100,7 +105,7 @@ theorem FiniteGroupTateCohomology.normFromCoinvariants_naturality_assoc {R : Typ
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `normFromCoinvariants_naturality`. The ordinary norm commutes with coefficient morphisms, giving the natural-transformation equation.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L54) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L54) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normNatTrans
 
@@ -112,7 +117,7 @@ noncomputable def FiniteGroupTateCohomology.normNatTrans {R : Type u} {G : Type 
 
 **Native source docstring:** The norm from coinvariants to invariants, natural in the representation.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L68) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L68) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normNatTrans_app
 
@@ -124,7 +129,7 @@ theorem FiniteGroupTateCohomology.normNatTrans_app {R : Type u} {G : Type v} [Co
 
 **Native source docstring:** The component of the norm natural transformation is the norm map.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L75) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L75) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.quotientNorm
 
@@ -137,7 +142,7 @@ noncomputable def FiniteGroupTateCohomology.quotientNorm {R : Type u} [CommRing 
 **Native source docstring:** For a finite normal subgroup `S` of `H`, the `S`-norm is equivariant for
 the residual `H ⧸ S`-action on coinvariants and invariants.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L102) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L102) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.quotientNorm_mk
 
@@ -149,7 +154,7 @@ theorem FiniteGroupTateCohomology.quotientNorm_mk {R : Type u} [CommRing R] {H :
 
 **Original catalogue explanation (not a Lean docstring):** Computes the residual quotient-equivariant norm on a coinvariant representative.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L116) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L116) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.quotientNorm_naturality
 
@@ -161,7 +166,7 @@ theorem FiniteGroupTateCohomology.quotientNorm_naturality {R : Type u} [CommRing
 
 **Original catalogue explanation (not a Lean docstring):** The norm for a finite normal subgroup commutes with changes of coefficients.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L123) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L123) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.quotientNorm_naturality_assoc
 
@@ -173,7 +178,7 @@ theorem FiniteGroupTateCohomology.quotientNorm_naturality_assoc {R : Type u} [Co
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `quotientNorm_naturality`. The norm for a finite normal subgroup commutes with changes of coefficients.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L123) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L123) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.quotientNormNatTrans
 
@@ -186,7 +191,7 @@ noncomputable def FiniteGroupTateCohomology.quotientNormNatTrans {R : Type u} [C
 **Native source docstring:** The residual-quotient-equivariant norm, natural in the ambient
 representation.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L134) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L134) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.quotientNormNatTrans_app
 
@@ -199,7 +204,7 @@ theorem FiniteGroupTateCohomology.quotientNormNatTrans_app {R : Type u} [CommRin
 **Native source docstring:** The component of the quotient-equivariant norm natural transformation is
 the quotient-equivariant norm map, with no finiteness assumption on `H`.
 
-[Source](../FiniteGroupTateCohomology/Norm.lean#L143) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Norm.lean#L143) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateDNegTwoArrowIso
 
@@ -212,7 +217,7 @@ noncomputable def FiniteGroupTateCohomology.tateDNegTwoArrowIso {R G : Type u} [
 **Native source docstring:** The differential entering degree `-1` in the Tate complex, identified with
 the concrete degree-zero group-homology differential.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L35) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L35) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateDNegTwoArrowIso_hom_right
 
@@ -224,7 +229,7 @@ theorem FiniteGroupTateCohomology.tateDNegTwoArrowIso_hom_right {R G : Type u} [
 
 **Original catalogue explanation (not a Lean docstring):** Identifies the right component of the arrow isomorphism at the differential entering Tate degree minus one.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L46) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L46) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateDZeroArrowIso
 
@@ -237,7 +242,7 @@ noncomputable def FiniteGroupTateCohomology.tateDZeroArrowIso {R G : Type u} [Co
 **Native source docstring:** The differential leaving degree `0` in the Tate complex, identified with
 the concrete degree-zero group-cohomology differential.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L50) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L50) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateDZeroArrowIso_hom_left
 
@@ -249,7 +254,7 @@ theorem FiniteGroupTateCohomology.tateDZeroArrowIso_hom_left {R G : Type u} [Com
 
 **Original catalogue explanation (not a Lean docstring):** Identifies the left component of the arrow isomorphism at the differential leaving Tate degree zero.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L61) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L61) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateOpcyclesIsoNegOne
 
@@ -261,7 +266,7 @@ noncomputable def FiniteGroupTateCohomology.tateOpcyclesIsoNegOne {R G : Type u}
 
 **Native source docstring:** The opcycles in degree `-1` of the Tate complex are the coinvariants.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L65) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L65) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCyclesIsoZero
 
@@ -273,7 +278,7 @@ noncomputable def FiniteGroupTateCohomology.tateCyclesIsoZero {R G : Type u} [Co
 
 **Native source docstring:** The cycles in degree `0` of the Tate complex are the invariants.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L73) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L73) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.pOpcycles_tateOpcyclesIsoNegOne_hom
 
@@ -285,7 +290,7 @@ theorem FiniteGroupTateCohomology.pOpcycles_tateOpcyclesIsoNegOne_hom {R G : Typ
 
 **Original catalogue explanation (not a Lean docstring):** The negative-one opcycle identification commutes with the opcycle quotient projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L82) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L82) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.pOpcycles_tateOpcyclesIsoNegOne_hom_assoc
 
@@ -297,7 +302,7 @@ theorem FiniteGroupTateCohomology.pOpcycles_tateOpcyclesIsoNegOne_hom_assoc {R G
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `pOpcycles_tateOpcyclesIsoNegOne_hom`. The negative-one opcycle identification commutes with the opcycle quotient projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L82) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L82) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.coinvariantsMk_tateOpcyclesIsoNegOne_inv
 
@@ -309,7 +314,7 @@ theorem FiniteGroupTateCohomology.coinvariantsMk_tateOpcyclesIsoNegOne_inv {R G 
 
 **Original catalogue explanation (not a Lean docstring):** The inverse opcycle comparison sends the coinvariants quotient to the Tate opcycle projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L88) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L88) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.coinvariantsMk_tateOpcyclesIsoNegOne_inv_assoc
 
@@ -321,7 +326,7 @@ theorem FiniteGroupTateCohomology.coinvariantsMk_tateOpcyclesIsoNegOne_inv_assoc
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `coinvariantsMk_tateOpcyclesIsoNegOne_inv`. The inverse opcycle comparison sends the coinvariants quotient to the Tate opcycle projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L88) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L88) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCyclesIsoZero_hom_inclusion
 
@@ -333,7 +338,7 @@ theorem FiniteGroupTateCohomology.tateCyclesIsoZero_hom_inclusion {R G : Type u}
 
 **Original catalogue explanation (not a Lean docstring):** The degree-zero cycle comparison commutes with the invariant submodule inclusion.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L96) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L96) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCyclesIsoZero_hom_inclusion_assoc
 
@@ -345,7 +350,7 @@ theorem FiniteGroupTateCohomology.tateCyclesIsoZero_hom_inclusion_assoc {R G : T
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `tateCyclesIsoZero_hom_inclusion`. The degree-zero cycle comparison commutes with the invariant submodule inclusion.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L96) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L96) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateOpcyclesIsoNegOne_naturality
 
@@ -357,7 +362,7 @@ theorem FiniteGroupTateCohomology.tateOpcyclesIsoNegOne_naturality {R G : Type u
 
 **Original catalogue explanation (not a Lean docstring):** The negative-one opcycle identification commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L104) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L104) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateOpcyclesIsoNegOne_naturality_assoc
 
@@ -369,7 +374,7 @@ theorem FiniteGroupTateCohomology.tateOpcyclesIsoNegOne_naturality_assoc {R G : 
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `tateOpcyclesIsoNegOne_naturality`. The negative-one opcycle identification commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L104) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L104) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCyclesIsoZero_naturality
 
@@ -381,7 +386,7 @@ theorem FiniteGroupTateCohomology.tateCyclesIsoZero_naturality {R G : Type u} [C
 
 **Original catalogue explanation (not a Lean docstring):** The degree-zero cycle identification commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L126) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L126) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCyclesIsoZero_naturality_assoc
 
@@ -393,7 +398,7 @@ theorem FiniteGroupTateCohomology.tateCyclesIsoZero_naturality_assoc {R G : Type
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `tateCyclesIsoZero_naturality`. The degree-zero cycle identification commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L126) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L126) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCyclesIsoZero_inv_naturality
 
@@ -405,7 +410,7 @@ theorem FiniteGroupTateCohomology.tateCyclesIsoZero_inv_naturality {R G : Type u
 
 **Original catalogue explanation (not a Lean docstring):** The inverse of the degree-zero cycle identification commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L152) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L152) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCyclesIsoZero_inv_naturality_assoc
 
@@ -417,7 +422,7 @@ theorem FiniteGroupTateCohomology.tateCyclesIsoZero_inv_naturality_assoc {R G : 
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `tateCyclesIsoZero_inv_naturality`. The inverse of the degree-zero cycle identification commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L152) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L152) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normArrowFunctor
 
@@ -429,7 +434,7 @@ noncomputable def FiniteGroupTateCohomology.normArrowFunctor {R G : Type u} [Com
 
 **Native source docstring:** The natural norm, regarded as a functor to the arrow category.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L159) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L159) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normKernelFunctor
 
@@ -441,7 +446,7 @@ noncomputable def FiniteGroupTateCohomology.normKernelFunctor {R G : Type u} [Co
 
 **Native source docstring:** Kernels of the norm, functorially in the representation.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L168) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L168) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normCokernelFunctor
 
@@ -453,7 +458,7 @@ noncomputable def FiniteGroupTateCohomology.normCokernelFunctor {R G : Type u} [
 
 **Native source docstring:** Cokernels of the norm, functorially in the representation.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L173) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L173) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normKernelFunctor_map_ι
 
@@ -465,7 +470,7 @@ theorem FiniteGroupTateCohomology.normKernelFunctor_map_ι {R G : Type u} [CommR
 
 **Original catalogue explanation (not a Lean docstring):** The norm-kernel functor's coefficient map commutes with its kernel inclusion.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L179) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L179) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normKernelFunctor_map_ι_assoc
 
@@ -477,7 +482,7 @@ theorem FiniteGroupTateCohomology.normKernelFunctor_map_ι_assoc {R G : Type u} 
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `normKernelFunctor_map_ι`. The norm-kernel functor's coefficient map commutes with its kernel inclusion.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L179) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L179) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normCokernelFunctor_π_map
 
@@ -489,7 +494,7 @@ theorem FiniteGroupTateCohomology.normCokernelFunctor_π_map {R G : Type u} [Com
 
 **Original catalogue explanation (not a Lean docstring):** The norm-cokernel functor's coefficient map commutes with its cokernel projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L198) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L198) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normCokernelFunctor_π_map_assoc
 
@@ -501,7 +506,7 @@ theorem FiniteGroupTateCohomology.normCokernelFunctor_π_map_assoc {R G : Type u
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `normCokernelFunctor_π_map`. The norm-cokernel functor's coefficient map commutes with its cokernel projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L198) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L198) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateNormFromCoinvariants
 
@@ -514,7 +519,7 @@ noncomputable def FiniteGroupTateCohomology.tateNormFromCoinvariants {R G : Type
 **Native source docstring:** The norm map appearing in the homology sequence of the Tate complex,
 expressed between the concrete coinvariants and invariants.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L216) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L216) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateNormFromCoinvariants_eq
 
@@ -526,7 +531,7 @@ theorem FiniteGroupTateCohomology.tateNormFromCoinvariants_eq {R G : Type u} [Co
 
 **Original catalogue explanation (not a Lean docstring):** Identifies the norm in the exceptional Tate homology sequence with the ordinary coinvariants-to-invariants norm.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L225) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L225) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence
 
@@ -538,7 +543,7 @@ noncomputable def FiniteGroupTateCohomology.normSequence {R G : Type u} [CommRin
 
 **Native source docstring:** The four-term norm sequence in exceptional Tate degrees.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L233) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L233) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence_first_naturality
 
@@ -550,7 +555,7 @@ theorem FiniteGroupTateCohomology.normSequence_first_naturality {R G : Type u} [
 
 **Original catalogue explanation (not a Lean docstring):** The first map of the four-term norm sequence commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L242) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L242) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence_first_naturality_assoc
 
@@ -562,7 +567,7 @@ theorem FiniteGroupTateCohomology.normSequence_first_naturality_assoc {R G : Typ
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `normSequence_first_naturality`. The first map of the four-term norm sequence commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L242) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L242) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence_last_naturality
 
@@ -574,7 +579,7 @@ theorem FiniteGroupTateCohomology.normSequence_last_naturality {R G : Type u} [C
 
 **Original catalogue explanation (not a Lean docstring):** The last map of the four-term norm sequence commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L253) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L253) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence_last_naturality_assoc
 
@@ -586,7 +591,7 @@ theorem FiniteGroupTateCohomology.normSequence_last_naturality_assoc {R G : Type
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `normSequence_last_naturality`. The last map of the four-term norm sequence commutes with coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L253) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L253) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.homologySequenceIsoNormSequence
 
@@ -599,7 +604,7 @@ noncomputable def FiniteGroupTateCohomology.homologySequenceIsoNormSequence {R G
 **Native source docstring:** The concrete norm sequence is isomorphic to the canonical homology sequence
 of the Tate complex.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L263) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L263) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence_exact
 
@@ -611,7 +616,7 @@ theorem FiniteGroupTateCohomology.normSequence_exact {R G : Type u} [CommRing R]
 
 **Native source docstring:** The four-term norm sequence is exact.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L284) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L284) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence_mono_first
 
@@ -623,7 +628,7 @@ instance FiniteGroupTateCohomology.normSequence_mono_first {R G : Type u} [CommR
 
 **Original catalogue explanation (not a Lean docstring):** The injection from Tate degree minus one into coinvariants is a category-theoretic monomorphism.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L291) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L291) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.normSequence_epi_last
 
@@ -635,7 +640,7 @@ instance FiniteGroupTateCohomology.normSequence_epi_last {R G : Type u} [CommRin
 
 **Original catalogue explanation (not a Lean docstring):** The projection from invariants onto Tate degree zero is a category-theoretic epimorphism.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L296) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L296) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm
 
@@ -648,7 +653,7 @@ noncomputable def FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm {R
 **Native source docstring:** Degree `-1` Tate cohomology is the kernel of the norm from coinvariants to
 invariants.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L300) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L300) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm
 
@@ -661,7 +666,7 @@ noncomputable def FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm {R
 **Native source docstring:** Degree `0` Tate cohomology is the cokernel of the norm from coinvariants to
 invariants.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L307) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L307) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm_hom_ι
 
@@ -673,7 +678,7 @@ theorem FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm_hom_ι {R G 
 
 **Original catalogue explanation (not a Lean docstring):** The negative-one kernel comparison commutes with the norm-kernel inclusion.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L314) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L314) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm_hom_ι_assoc
 
@@ -685,7 +690,7 @@ theorem FiniteGroupTateCohomology.tateCohomologyNegOneIsoKernelNorm_hom_ι_assoc
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `tateCohomologyNegOneIsoKernelNorm_hom_ι`. The negative-one kernel comparison commutes with the norm-kernel inclusion.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L314) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L314) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm_π_hom
 
@@ -697,7 +702,7 @@ theorem FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm_π_hom {R G 
 
 **Original catalogue explanation (not a Lean docstring):** The degree-zero cokernel comparison commutes with the norm-cokernel projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L323) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L323) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm_π_hom_assoc
 
@@ -709,7 +714,7 @@ theorem FiniteGroupTateCohomology.tateCohomologyZeroIsoCokernelNorm_π_hom_assoc
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `tateCohomologyZeroIsoCokernelNorm_π_hom`. The degree-zero cokernel comparison commutes with the norm-cokernel projection.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L323) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L323) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm
 
@@ -722,7 +727,7 @@ noncomputable def FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm
 **Native source docstring:** Degree `-1` Tate cohomology is naturally isomorphic to the kernel of the
 norm from coinvariants to invariants.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L350) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L350) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm
 
@@ -735,7 +740,7 @@ noncomputable def FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm
 **Native source docstring:** Degree `0` Tate cohomology is naturally isomorphic to the cokernel of the
 norm from coinvariants to invariants.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L405) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L405) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm_hom_app
 
@@ -747,7 +752,7 @@ theorem FiniteGroupTateCohomology.tateCohomologyNegOneNatIsoKernelNorm_hom_app {
 
 **Native source docstring:** The degree `-1` natural isomorphism has the kernel comparison as its component.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L451) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L451) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm_hom_app
 
@@ -759,7 +764,7 @@ theorem FiniteGroupTateCohomology.tateCohomologyZeroNatIsoCokernelNorm_hom_app {
 
 **Native source docstring:** The degree `0` natural isomorphism has the cokernel comparison as its component.
 
-[Source](../FiniteGroupTateCohomology/Basic.lean#L457) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/Basic.lean#L457) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.normHomCompSubMap
 
@@ -772,7 +777,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.normHomCompSubMap {R G : Type
 **Native source docstring:** The canonical morphism between the short complexes
 `A --N--> A --(g - 1)--> A` induced by a representation morphism.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L61) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L61) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.subCompNormHomMap
 
@@ -785,7 +790,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.subCompNormHomMap {R G : Type
 **Native source docstring:** The canonical morphism between the short complexes
 `A --(g - 1)--> A --N--> A` induced by a representation morphism.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L73) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L73) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.normHomCompSubMap_id
 
@@ -797,7 +802,7 @@ theorem FiniteGroupTateCohomology.Cyclic.normHomCompSubMap_id {R G : Type u} [Co
 
 **Original catalogue explanation (not a Lean docstring):** Identity coefficient maps induce the identity morphism of the norm-then-(g−1) short complexes.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L85) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L85) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.normHomCompSubMap_comp
 
@@ -809,7 +814,7 @@ theorem FiniteGroupTateCohomology.Cyclic.normHomCompSubMap_comp {R G : Type u} [
 
 **Original catalogue explanation (not a Lean docstring):** The norm-then-(g−1) short-complex map respects composition of coefficient maps.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L90) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L90) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.subCompNormHomMap_id
 
@@ -821,7 +826,7 @@ theorem FiniteGroupTateCohomology.Cyclic.subCompNormHomMap_id {R G : Type u} [Co
 
 **Original catalogue explanation (not a Lean docstring):** Identity coefficient maps induce the identity morphism of the (g−1)-then-norm short complexes.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L96) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L96) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.subCompNormHomMap_comp
 
@@ -833,7 +838,7 @@ theorem FiniteGroupTateCohomology.Cyclic.subCompNormHomMap_comp {R G : Type u} [
 
 **Original catalogue explanation (not a Lean docstring):** The (g−1)-then-norm short-complex map respects composition of coefficient maps.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L101) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L101) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.normHomCompSubFunctor
 
@@ -846,7 +851,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.normHomCompSubFunctor {R G : 
 **Native source docstring:** The fixed-`g` functor of short complexes
 `A --N--> A --(g - 1)--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L107) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L107) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.subCompNormHomFunctor
 
@@ -859,7 +864,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.subCompNormHomFunctor {R G : 
 **Native source docstring:** The fixed-`g` functor of short complexes
 `A --(g - 1)--> A --N--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L117) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L117) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModelFunctor
 
@@ -872,7 +877,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.evenModelFunctor {R G : Type 
 **Native source docstring:** The coefficient functor obtained as the homology of
 `A --N--> A --(g - 1)--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L127) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L127) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModelFunctor
 
@@ -885,7 +890,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.oddModelFunctor {R G : Type u
 **Native source docstring:** The coefficient functor obtained as the homology of
 `A --(g - 1)--> A --N--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L133) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L133) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModelFunctor_obj
 
@@ -897,7 +902,7 @@ theorem FiniteGroupTateCohomology.Cyclic.evenModelFunctor_obj {R G : Type u} [Co
 
 **Original catalogue explanation (not a Lean docstring):** Evaluating the even-model coefficient functor returns the homology of the norm-then-(g−1) short complex.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L139) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L139) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModelFunctor_map
 
@@ -909,7 +914,7 @@ theorem FiniteGroupTateCohomology.Cyclic.evenModelFunctor_map {R G : Type u} [Co
 
 **Original catalogue explanation (not a Lean docstring):** The even-model coefficient functor maps a morphism by its induced short-complex homology map.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L145) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L145) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModelFunctor_obj
 
@@ -921,7 +926,7 @@ theorem FiniteGroupTateCohomology.Cyclic.oddModelFunctor_obj {R G : Type u} [Com
 
 **Original catalogue explanation (not a Lean docstring):** Evaluating the odd-model coefficient functor returns the homology of the (g−1)-then-norm short complex.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L150) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L150) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModelFunctor_map
 
@@ -933,7 +938,7 @@ theorem FiniteGroupTateCohomology.Cyclic.oddModelFunctor_map {R G : Type u} [Com
 
 **Original catalogue explanation (not a Lean docstring):** The odd-model coefficient functor maps a morphism by its induced short-complex homology map.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L156) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L156) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModelMap
 
@@ -946,7 +951,7 @@ noncomputable abbrev FiniteGroupTateCohomology.Cyclic.evenModelMap {R G : Type u
 **Native source docstring:** The canonical map on the even alternating model induced by a
 representation morphism.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L161) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L161) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModelMap
 
@@ -959,7 +964,7 @@ noncomputable abbrev FiniteGroupTateCohomology.Cyclic.oddModelMap {R G : Type u}
 **Native source docstring:** The canonical map on the odd alternating model induced by a
 representation morphism.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L168) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L168) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModelMap_id
 
@@ -971,7 +976,7 @@ theorem FiniteGroupTateCohomology.Cyclic.evenModelMap_id {R G : Type u} [CommRin
 
 **Original catalogue explanation (not a Lean docstring):** Identity coefficients induce the identity on even-model homology.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L175) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L175) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModelMap_comp
 
@@ -983,7 +988,7 @@ theorem FiniteGroupTateCohomology.Cyclic.evenModelMap_comp {R G : Type u} [CommR
 
 **Original catalogue explanation (not a Lean docstring):** Even-model homology maps preserve composition of arbitrary coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L179) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L179) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModelMap_id
 
@@ -995,7 +1000,7 @@ theorem FiniteGroupTateCohomology.Cyclic.oddModelMap_id {R G : Type u} [CommRing
 
 **Original catalogue explanation (not a Lean docstring):** Identity coefficients induce the identity on odd-model homology.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L184) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L184) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModelMap_comp
 
@@ -1007,7 +1012,7 @@ theorem FiniteGroupTateCohomology.Cyclic.oddModelMap_comp {R G : Type u} [CommRi
 
 **Original catalogue explanation (not a Lean docstring):** Odd-model homology maps preserve composition of arbitrary coefficient morphisms.
 
-[Source](../FiniteGroupTateCohomology/CyclicModelFunctor.lean#L188) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicModelFunctor.lean#L188) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModel
 
@@ -1020,7 +1025,7 @@ noncomputable abbrev FiniteGroupTateCohomology.Cyclic.evenModel {R G : Type u} [
 **Native source docstring:** The alternating short-complex homology used in even Tate degrees:
 `A --N--> A --(g - 1)--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L47) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L47) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModel
 
@@ -1033,7 +1038,7 @@ noncomputable abbrev FiniteGroupTateCohomology.Cyclic.oddModel {R G : Type u} [C
 **Native source docstring:** The alternating short-complex homology used in odd Tate degrees:
 `A --(g - 1)--> A --N--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L52) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L52) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.generatorSub
 
@@ -1045,7 +1050,7 @@ noncomputable abbrev FiniteGroupTateCohomology.Cyclic.generatorSub {R G : Type u
 
 **Native source docstring:** The endomorphism `g - 1` of the underlying coefficient module.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L57) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L57) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.invariantsIsoKernelGeneratorSub
 
@@ -1057,7 +1062,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.invariantsIsoKernelGeneratorS
 
 **Native source docstring:** For a chosen generator, the invariant submodule is the kernel of `g - 1`.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L61) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L61) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.cokernelGeneratorSubIsoCoinvariants
 
@@ -1069,7 +1074,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.cokernelGeneratorSubIsoCoinva
 
 **Native source docstring:** For a chosen generator, the cokernel of `g - 1` is the coinvariant module.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L78) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L78) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.invariantsIsoKernelGeneratorSub_hom_ι
 
@@ -1081,7 +1086,7 @@ theorem FiniteGroupTateCohomology.Cyclic.invariantsIsoKernelGeneratorSub_hom_ι 
 
 **Original catalogue explanation (not a Lean docstring):** The generator-based invariants/kernel comparison commutes with the kernel inclusion.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L84) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L84) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.invariantsIsoKernelGeneratorSub_hom_ι_assoc
 
@@ -1093,7 +1098,7 @@ theorem FiniteGroupTateCohomology.Cyclic.invariantsIsoKernelGeneratorSub_hom_ι_
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `invariantsIsoKernelGeneratorSub_hom_ι`. The generator-based invariants/kernel comparison commutes with the kernel inclusion.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L84) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L84) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.cokernel_π_cokernelGeneratorSubIsoCoinvariants_hom
 
@@ -1105,7 +1110,7 @@ theorem FiniteGroupTateCohomology.Cyclic.cokernel_π_cokernelGeneratorSubIsoCoin
 
 **Original catalogue explanation (not a Lean docstring):** The generator-based cokernel/coinvariants comparison commutes with the cokernel projection.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L94) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L94) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.cokernel_π_cokernelGeneratorSubIsoCoinvariants_hom_assoc
 
@@ -1117,7 +1122,7 @@ theorem FiniteGroupTateCohomology.Cyclic.cokernel_π_cokernelGeneratorSubIsoCoin
 
 **Original catalogue explanation (not a Lean docstring):** Generated `@[reassoc]` association variant of `cokernel_π_cokernelGeneratorSubIsoCoinvariants_hom`. The generator-based cokernel/coinvariants comparison commutes with the cokernel projection.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L94) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L94) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.evenModelIsoCokernelNorm
 
@@ -1130,7 +1135,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.evenModelIsoCokernelNorm {R G
 **Native source docstring:** The even alternating model is canonically the cokernel of the norm from
 coinvariants to invariants.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L135) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L135) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.oddModelIsoKernelNorm
 
@@ -1143,7 +1148,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.oddModelIsoKernelNorm {R G : 
 **Native source docstring:** The odd alternating model is canonically the kernel of the norm from
 coinvariants to invariants.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L146) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L146) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoEven
 
@@ -1156,7 +1161,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoEven {R G : 
 **Native source docstring:** Tate cohomology in every even integer degree, compared coherently with
 `A --N--> A --(g - 1)--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L197) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L197) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoOdd
 
@@ -1169,7 +1174,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoOdd {R G : T
 **Native source docstring:** Tate cohomology in every odd integer degree, compared coherently with
 `A --(g - 1)--> A --N--> A`.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L222) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L222) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoEven_zero
 
@@ -1182,7 +1187,7 @@ theorem FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoEven_zero {R G : Type 
 **Native source docstring:** At degree `0`, the even comparison is exactly the accepted cokernel-of-norm
 comparison followed by the inverse model identification.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L246) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L246) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoOdd_negOne
 
@@ -1195,7 +1200,7 @@ theorem FiniteGroupTateCohomology.Cyclic.tateCohomologyIsoOdd_negOne {R G : Type
 **Native source docstring:** At degree `-1`, the odd comparison is exactly the accepted kernel-of-norm
 comparison followed by the inverse model identification.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L254) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L254) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso
 
@@ -1208,7 +1213,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso {R G 
 **Native source docstring:** The normalized isomorphism between any two Tate degrees of the same parity.
 It is defined by mapping both degrees to their common alternating model.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L262) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L262) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso_self
 
@@ -1220,7 +1225,7 @@ theorem FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso_self {R G : Typ
 
 **Native source docstring:** The normalized same-parity isomorphism at one degree is the identity.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L274) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L274) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso_symm
 
@@ -1232,7 +1237,7 @@ theorem FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso_symm {R G : Typ
 
 **Native source docstring:** Normalized same-parity comparisons invert by reversing their endpoints.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L280) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L280) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso_trans
 
@@ -1245,7 +1250,7 @@ theorem FiniteGroupTateCohomology.Cyclic.tateCohomologyParityIso_trans {R G : Ty
 **Native source docstring:** Normalized same-parity comparisons telescope through an intermediate
 degree.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L290) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L290) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity
 
@@ -1258,7 +1263,7 @@ noncomputable def FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity {R 
 **Native source docstring:** Additive period-two Tate cohomology for a finite cyclic group with chosen
 generator.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L305) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L305) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity_trans
 
@@ -1271,7 +1276,7 @@ theorem FiniteGroupTateCohomology.Cyclic.tateCohomologyPeriodicity_trans {R G : 
 **Native source docstring:** Two consecutive period-two shifts are the normalized same-parity
 comparison across four degrees; the intermediate model cancels.
 
-[Source](../FiniteGroupTateCohomology/CyclicPeriodicity.lean#L311) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomology/CyclicPeriodicity.lean#L311) (native source start line; generated association laws point to their source lemma).
 
 ## Checked-use clients (63 native named entries)
 
@@ -1285,7 +1290,7 @@ noncomputable def FiniteGroupTateCohomologyTests.normIndependentUniverses {R : T
 
 **Native source docstring:** The ordinary norm also keeps scalar, group and carrier universes independent.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L31) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L31) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.norm_transformation_component
 
@@ -1298,7 +1303,7 @@ theorem FiniteGroupTateCohomologyTests.norm_transformation_component {R : Type u
 **Native source docstring:** The ordinary natural transformation has the advertised component with
 independent scalar, group and carrier universes.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L36) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L36) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.norm_independentNaturality
 
@@ -1310,7 +1315,7 @@ theorem FiniteGroupTateCohomologyTests.norm_independentNaturality {R : Type u} {
 
 **Native source docstring:** The ordinary norm commutes with independent-universe coefficient maps.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L43) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L43) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNormClient
 
@@ -1323,7 +1328,7 @@ noncomputable def FiniteGroupTateCohomologyTests.quotientNormClient {R : Type u}
 **Native source docstring:** The residual norm is usable for an arbitrary ambient group and an
 independent-universe coefficient representation.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L51) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L51) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNorm_representative
 
@@ -1335,7 +1340,7 @@ theorem FiniteGroupTateCohomologyTests.quotientNorm_representative {R : Type u} 
 
 **Native source docstring:** The residual norm has its public representative computation.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L57) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L57) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNorm_coefficients
 
@@ -1347,7 +1352,7 @@ theorem FiniteGroupTateCohomologyTests.quotientNorm_coefficients {R : Type u} {H
 
 **Native source docstring:** Changing coefficients commutes with the norm for a normal subgroup.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L65) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L65) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNormNaturalTransformation
 
@@ -1359,7 +1364,7 @@ noncomputable def FiniteGroupTateCohomologyTests.quotientNormNaturalTransformati
 
 **Native source docstring:** The residual norm is a natural transformation, not merely an objectwise map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L73) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L73) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNorm_transformation_component
 
@@ -1372,7 +1377,7 @@ theorem FiniteGroupTateCohomologyTests.quotientNorm_transformation_component {R 
 **Native source docstring:** The residual natural transformation has the quotient norm component,
 without requiring the ambient group to be finite.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L79) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L79) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNorm_transformation_representative
 
@@ -1384,7 +1389,7 @@ theorem FiniteGroupTateCohomologyTests.quotientNorm_transformation_representativ
 
 **Native source docstring:** The natural transformation computes on a coinvariant representative.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L86) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L86) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNorm_transformation_coefficients
 
@@ -1396,7 +1401,7 @@ theorem FiniteGroupTateCohomologyTests.quotientNorm_transformation_coefficients 
 
 **Native source docstring:** The residual naturality square reduces to the maps' naturality square.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L95) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L95) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.quotientNorm_whiskered_component
 
@@ -1409,7 +1414,7 @@ theorem FiniteGroupTateCohomologyTests.quotientNorm_whiskered_component {R : Typ
 **Native source docstring:** Both whiskerings expose the residual norm as the map supplied to the
 postcomposed functor, as in finite-level deflation.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L105) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L105) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.negativeOneKernel
 
@@ -1421,7 +1426,7 @@ noncomputable def FiniteGroupTateCohomologyTests.negativeOneKernel {R G : Type u
 
 **Native source docstring:** Tate degree minus one is the kernel of the norm.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L126) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L126) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.zeroCokernel
 
@@ -1433,7 +1438,7 @@ noncomputable def FiniteGroupTateCohomologyTests.zeroCokernel {R G : Type u} [Co
 
 **Native source docstring:** Degree zero is the cokernel of the norm.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L131) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L131) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.fourTerm_exact
 
@@ -1445,7 +1450,7 @@ theorem FiniteGroupTateCohomologyTests.fourTerm_exact {R G : Type u} [CommRing R
 
 **Native source docstring:** The four-term norm sequence is exact at its two middle terms.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L136) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L136) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.fourTerm_middle
 
@@ -1457,7 +1462,7 @@ theorem FiniteGroupTateCohomologyTests.fourTerm_middle {R G : Type u} [CommRing 
 
 **Native source docstring:** The middle arrow is definitionally the norm, not an unrelated connecting map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L141) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L141) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.fourTerm_first_mono
 
@@ -1469,7 +1474,7 @@ theorem FiniteGroupTateCohomologyTests.fourTerm_first_mono {R G : Type u} [CommR
 
 **Native source docstring:** The first map of the four-term norm sequence is a monomorphism.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L147) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L147) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.fourTerm_last_epi
 
@@ -1481,7 +1486,7 @@ theorem FiniteGroupTateCohomologyTests.fourTerm_last_epi {R G : Type u} [CommRin
 
 **Native source docstring:** The last map of the four-term norm sequence is an epimorphism.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L152) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L152) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.fourTerm_first_naturality
 
@@ -1493,7 +1498,7 @@ theorem FiniteGroupTateCohomologyTests.fourTerm_first_naturality {R G : Type u} 
 
 **Native source docstring:** The first endpoint commutes with coefficient maps.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L157) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L157) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.fourTerm_last_naturality
 
@@ -1505,7 +1510,7 @@ theorem FiniteGroupTateCohomologyTests.fourTerm_last_naturality {R G : Type u} [
 
 **Native source docstring:** The last endpoint commutes with coefficient maps.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L167) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L167) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.negativeOne_naturality
 
@@ -1517,7 +1522,7 @@ theorem FiniteGroupTateCohomologyTests.negativeOne_naturality {R G : Type u} [Co
 
 **Native source docstring:** The kernel comparison is natural in the coefficient representation.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L177) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L177) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.zero_naturality
 
@@ -1529,7 +1534,7 @@ theorem FiniteGroupTateCohomologyTests.zero_naturality {R G : Type u} [CommRing 
 
 **Native source docstring:** The cokernel comparison is natural in the coefficient representation.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L188) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L188) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.negativeOne_component
 
@@ -1541,7 +1546,7 @@ theorem FiniteGroupTateCohomologyTests.negativeOne_component {R G : Type u} [Com
 
 **Native source docstring:** The negative-one natural component is the objectwise norm-kernel comparison.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L199) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L199) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.zero_component
 
@@ -1553,7 +1558,7 @@ theorem FiniteGroupTateCohomologyTests.zero_component {R G : Type u} [CommRing R
 
 **Native source docstring:** The zero-degree natural component is the objectwise norm-cokernel comparison.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L206) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L206) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.negativeOne_component_kernelInclusion
 
@@ -1565,7 +1570,7 @@ theorem FiniteGroupTateCohomologyTests.negativeOne_component_kernelInclusion {R 
 
 **Native source docstring:** The negative-one natural component commutes with the norm-kernel inclusion.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L214) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L214) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.zero_component_cokernelProjection
 
@@ -1577,7 +1582,7 @@ theorem FiniteGroupTateCohomologyTests.zero_component_cokernelProjection {R G : 
 
 **Native source docstring:** The zero-degree natural component commutes with the norm-cokernel projection.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L225) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L225) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenShortComplex_fixedElement
 
@@ -1589,7 +1594,7 @@ theorem FiniteGroupTateCohomologyTests.evenShortComplex_fixedElement {R G : Type
 
 **Native source docstring:** An arbitrary chosen element defines an even short-complex coefficient functor.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L243) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L243) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.oddModel_fixedElement
 
@@ -1601,7 +1606,7 @@ theorem FiniteGroupTateCohomologyTests.oddModel_fixedElement {R G : Type u} [Com
 
 **Native source docstring:** The odd model reverses the two differentials, without a generator proof.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L249) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L249) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenShortComplex_first
 
@@ -1613,7 +1618,7 @@ theorem FiniteGroupTateCohomologyTests.evenShortComplex_first {R G : Type u} [Co
 
 **Native source docstring:** The first position of the even complex uses the underlying coefficient map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L255) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L255) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenShortComplex_second
 
@@ -1625,7 +1630,7 @@ theorem FiniteGroupTateCohomologyTests.evenShortComplex_second {R G : Type u} [C
 
 **Native source docstring:** The second position of the even complex uses the underlying coefficient map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L260) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L260) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenShortComplex_third
 
@@ -1637,7 +1642,7 @@ theorem FiniteGroupTateCohomologyTests.evenShortComplex_third {R G : Type u} [Co
 
 **Native source docstring:** The third position of the even complex uses the underlying coefficient map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L265) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L265) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.oddShortComplex_first
 
@@ -1649,7 +1654,7 @@ theorem FiniteGroupTateCohomologyTests.oddShortComplex_first {R G : Type u} [Com
 
 **Native source docstring:** The first position of the odd complex uses the underlying coefficient map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L270) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L270) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.oddShortComplex_second
 
@@ -1661,7 +1666,7 @@ theorem FiniteGroupTateCohomologyTests.oddShortComplex_second {R G : Type u} [Co
 
 **Native source docstring:** The second position of the odd complex uses the underlying coefficient map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L275) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L275) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.oddShortComplex_third
 
@@ -1673,7 +1678,7 @@ theorem FiniteGroupTateCohomologyTests.oddShortComplex_third {R G : Type u} [Com
 
 **Native source docstring:** The third position of the odd complex uses the underlying coefficient map.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L280) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L280) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenShortComplex_id
 
@@ -1685,7 +1690,7 @@ theorem FiniteGroupTateCohomologyTests.evenShortComplex_id {R G : Type u} [CommR
 
 **Native source docstring:** Identity coefficients give identity maps of even short complexes.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L285) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L285) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.oddShortComplex_id
 
@@ -1697,7 +1702,7 @@ theorem FiniteGroupTateCohomologyTests.oddShortComplex_id {R G : Type u} [CommRi
 
 **Native source docstring:** Identity coefficients give identity maps of odd short complexes.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L290) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L290) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenModel_id
 
@@ -1709,7 +1714,7 @@ theorem FiniteGroupTateCohomologyTests.evenModel_id {R G : Type u} [CommRing R] 
 
 **Native source docstring:** Identity coefficients give the identity map on even model homology.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L295) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L295) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.oddModel_id
 
@@ -1721,7 +1726,7 @@ theorem FiniteGroupTateCohomologyTests.oddModel_id {R G : Type u} [CommRing R] [
 
 **Native source docstring:** Identity coefficients give the identity map on odd model homology.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L300) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L300) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenShortComplex_comp
 
@@ -1733,7 +1738,7 @@ theorem FiniteGroupTateCohomologyTests.evenShortComplex_comp {R G : Type u} [Com
 
 **Native source docstring:** Coefficient maps on the even short complexes respect composition.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L305) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L305) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.evenModel_comp
 
@@ -1745,7 +1750,7 @@ theorem FiniteGroupTateCohomologyTests.evenModel_comp {R G : Type u} [CommRing R
 
 **Native source docstring:** Homology maps of the even model respect arbitrary coefficient compositions.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L313) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L313) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.oddModel_comp
 
@@ -1757,7 +1762,7 @@ theorem FiniteGroupTateCohomologyTests.oddModel_comp {R G : Type u} [CommRing R]
 
 **Native source docstring:** Homology maps of the odd model respect arbitrary coefficient compositions.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L321) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L321) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.cyclicRepresentation
 
@@ -1769,7 +1774,7 @@ abbrev FiniteGroupTateCohomologyTests.cyclicRepresentation : Rep (ZMod 2) (Multi
 
 **Native source docstring:** A nonzero coefficient representation of the nontrivial cyclic group of order two.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L333) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L333) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.concreteNegativeOne_component
 
@@ -1781,7 +1786,7 @@ theorem FiniteGroupTateCohomologyTests.concreteNegativeOne_component : FiniteGro
 
 **Native source docstring:** The norm-kernel natural component specializes to nontrivial cyclic coefficients.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L337) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L337) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.concreteZero_component
 
@@ -1793,7 +1798,7 @@ theorem FiniteGroupTateCohomologyTests.concreteZero_component : FiniteGroupTateC
 
 **Native source docstring:** The norm-cokernel natural component specializes to nontrivial cyclic coefficients.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L345) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L345) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.concreteQuotientNorm
 
@@ -1805,7 +1810,7 @@ noncomputable def FiniteGroupTateCohomologyTests.concreteQuotientNorm : cyclicRe
 
 **Native source docstring:** The norm descends equivariantly for the whole nontrivial order-two group.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L353) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L353) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.concreteQuotientNorm_component
 
@@ -1817,7 +1822,7 @@ theorem FiniteGroupTateCohomologyTests.concreteQuotientNorm_component [Fintype �
 
 **Native source docstring:** The whole order-two subgroup supplies a nontrivial concrete component.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L361) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L361) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degenerateNorm_component
 
@@ -1829,7 +1834,7 @@ theorem FiniteGroupTateCohomologyTests.degenerateNorm_component : FiniteGroupTat
 
 **Native source docstring:** The component contract also applies to the trivial group and zero ring.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L370) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L370) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.twoGenerator
 
@@ -1841,7 +1846,7 @@ theorem FiniteGroupTateCohomologyTests.twoGenerator (x : Multiplicative (ZMod 2)
 
 **Native source docstring:** The chosen nonidentity element really generates the cyclic group of order two.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L377) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L377) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.zeroCoefficient_ne_id
 
@@ -1853,7 +1858,7 @@ theorem FiniteGroupTateCohomologyTests.zeroCoefficient_ne_id : 0 ≠ CategoryThe
 
 **Native source docstring:** The zero coefficient endomorphism is genuinely not the identity.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L385) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L385) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.zeroCoefficient_even_comp
 
@@ -1865,7 +1870,7 @@ theorem FiniteGroupTateCohomologyTests.zeroCoefficient_even_comp : FiniteGroupTa
 
 **Native source docstring:** Nonidentity coefficient maps obey the even model's composition law.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L393) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L393) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degreeNegTwo
 
@@ -1877,7 +1882,7 @@ noncomputable def FiniteGroupTateCohomologyTests.degreeNegTwo : tateCohomology c
 
 **Native source docstring:** The even comparison is usable in Tate degree minus two.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L404) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L404) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degreeNegOne
 
@@ -1889,7 +1894,7 @@ noncomputable def FiniteGroupTateCohomologyTests.degreeNegOne : tateCohomology c
 
 **Native source docstring:** The odd comparison is usable in Tate degree minus one.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L411) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L411) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degreeZero
 
@@ -1901,7 +1906,7 @@ noncomputable def FiniteGroupTateCohomologyTests.degreeZero : tateCohomology cyc
 
 **Native source docstring:** The even comparison is usable in Tate degree zero.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L418) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L418) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degreeOne
 
@@ -1913,7 +1918,7 @@ noncomputable def FiniteGroupTateCohomologyTests.degreeOne : tateCohomology cycl
 
 **Native source docstring:** The odd comparison is usable in Tate degree one.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L425) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L425) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degreeTwo
 
@@ -1925,7 +1930,7 @@ noncomputable def FiniteGroupTateCohomologyTests.degreeTwo : tateCohomology cycl
 
 **Native source docstring:** The even comparison is usable in Tate degree two.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L432) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L432) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.periodNegTwo
 
@@ -1937,7 +1942,7 @@ noncomputable def FiniteGroupTateCohomologyTests.periodNegTwo : tateCohomology c
 
 **Native source docstring:** The chosen generator supplies period two at degree minus two.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L439) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L439) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.periodNegOne
 
@@ -1949,7 +1954,7 @@ noncomputable def FiniteGroupTateCohomologyTests.periodNegOne : tateCohomology c
 
 **Native source docstring:** The chosen generator supplies period two at degree minus one.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L446) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L446) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.periodZero
 
@@ -1961,7 +1966,7 @@ noncomputable def FiniteGroupTateCohomologyTests.periodZero : tateCohomology cyc
 
 **Native source docstring:** The chosen generator supplies period two at degree zero.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L453) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L453) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.periodOne
 
@@ -1973,7 +1978,7 @@ noncomputable def FiniteGroupTateCohomologyTests.periodOne : tateCohomology cycl
 
 **Native source docstring:** The chosen generator supplies period two at degree one.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L460) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L460) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.periodTwo
 
@@ -1985,7 +1990,7 @@ noncomputable def FiniteGroupTateCohomologyTests.periodTwo : tateCohomology cycl
 
 **Native source docstring:** The chosen generator supplies period two at degree two.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L467) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L467) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degreeZero_cokernel
 
@@ -1997,7 +2002,7 @@ theorem FiniteGroupTateCohomologyTests.degreeZero_cokernel : FiniteGroupTateCoho
 
 **Native source docstring:** The exceptional degree-zero comparison factors through the norm cokernel.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L474) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L474) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degreeZero_telescope
 
@@ -2009,7 +2014,7 @@ theorem FiniteGroupTateCohomologyTests.degreeZero_telescope : FiniteGroupTateCoh
 
 **Native source docstring:** Two period-two steps telescope through the same chosen cyclic model.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L484) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L484) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degenerateNormSequence
 
@@ -2021,7 +2026,7 @@ theorem FiniteGroupTateCohomologyTests.degenerateNormSequence : (FiniteGroupTate
 
 **Native source docstring:** A trivial group over a zero ring is admissible in the norm exact sequence.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L496) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L496) (native source start line; generated association laws point to their source lemma).
 
 ### FiniteGroupTateCohomologyTests.degeneratePeriodicity
 
@@ -2033,4 +2038,4 @@ noncomputable def FiniteGroupTateCohomologyTests.degeneratePeriodicity (n : ℤ)
 
 **Native source docstring:** Degenerate coefficients and the trivial group also admit cyclic periodicity.
 
-[Source](../FiniteGroupTateCohomologyTests/PublicAPI.lean#L501) (native source start line; generated association laws point to their source lemma).
+[Source](https://github.com/FormalFrontier/finite-group-tate-cohomology/blob/1ffe47ec77e24c0d0bca827b6f4ec6ca91e3351c/FiniteGroupTateCohomologyTests/PublicAPI.lean#L501) (native source start line; generated association laws point to their source lemma).

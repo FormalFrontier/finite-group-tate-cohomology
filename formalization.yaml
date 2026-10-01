@@ -32,18 +32,14 @@ sources:
 automation:
   methods:
     - method: agent
-      framework: OpenAI Codex CLI with Formal Frontier Hive Tasks
+      framework: OpenAI Codex CLI with Lean verification
       tool_setup: Lean 4.34.0-rc2 and pinned mathlib4 with cache-first Lake builds
       prompting_notes: >-
-        AI agents implemented, checked and reviewed distinct development units;
-        bounded module migration, checked public examples and metadata were
-        accepted through development PR12 at 9882255fffc9960eb01497ae2edce43ccf877408.
-        This September 25, 2026 historical note precedes initial official
-        publication. Worker-b Hive Task hive-request-67cef5e3f1493ec7a13f1ab6f26550efcf9464ac
-        (UID 2472c71f-90ec-4c30-a95c-e2686723a304) prepared the
-        September 26, 2026 norm-component API successor. Its ordinary PR15
-        review included affected stored-proof-body checks, followed by maintainer
-        acceptance at dd636c3c10969699a7e351847590ffc0600314ff.
+        AI-assisted Formal Frontier agents and formalization workers contributed
+        distinct mathematical modules, norm and NatIso component interfaces,
+        checked examples, the original mixed-kind native catalogue and later
+        documentation adaptations. The mathematical work was Lean-checked and
+        independently reviewed; source-specific correspondence is separate.
   notes: >-
     Formal Frontier source maintainers retain mathematical acceptance and source
     correspondence responsibility; AI assistance alone establishes neither.
@@ -53,15 +49,11 @@ status:
     Finite-group norm and exceptional degrees, quotient-equivariant norm for
     finite normal subgroups, fixed-element cyclic model coefficient functors,
     and objectwise all-integer additive cyclic period two with chosen generator.
-    At the September 25, 2026 documentation-author snapshot, first-release
-    certification and source-coverage decisions had not been made; later status
-    belongs to an external exact-candidate acceptance/publication record. The
-    September 26, 2026 component-API changes were independently reviewed and
-    accepted as ordinary development at dd636c3c10969699a7e351847590ffc0600314ff;
-    ordinary acceptance is not an official release or dependency pin. Initial
-    accepted ordinary main 61577f7cf2e02715f621a724aa692921ab6bbad9
-    and official public-release 65002a587774fa31cd237ab296c79258ceebab3f
-    share the preceding tree ceb832a55e50a33fe1132f17960ffe9d046a3f24.
+    Native public API documentation is a historical source-byte reference, not
+    certification of all private/generated proofs or selected-source coverage.
+    No natural Tate comparison, generator independence, full resolution
+    comparison, cup products, integral degree-two class, coefficient exact
+    hexagon, cohomological triviality, local duality or NSW coverage is claimed.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms:
@@ -95,25 +87,17 @@ fidelity:
 
 review:
   status: >-
-    Independently reviewed and maintainer-accepted ordinary mathematics through
-    the September 26, 2026 component API; exact-artifact release status is
-    recorded externally.
+    Shipped mathematical development and checked-use clients underwent
+    independent review; each release has separate exact-artifact acceptance.
+    This metadata alone does not certify source-specific correspondence.
   reviewers:
     - Lattice (development PRs 3 and 8)
     - Formal Frontier agents (development PRs 9 and 10)
-    - >-
-      Formalization Worker A, ordinary PR15,
-      Task hive-request-67fcf32c96c80dc37a81e1441777906aefd2f583,
-      UID 890e249d-1413-4c8b-8c49-4775a19d38c4
+    - Formal Frontier independent norm-component reviewer (development PR15)
   notes: >-
-    PR12's independently reviewed bounded module migration, public examples
-    and metadata are present on the accepted development main at 9882255fffc9960eb01497ae2edce43ccf877408;
-    Earlier reviews and PR12 do not cover the later norm-component API or its
-    regenerated native docs. The separate ordinary PR15 review and maintainer
-    acceptance bind dd636c3c10969699a7e351847590ffc0600314ff, including 96 freshly
-    checked affected and 206 unchanged joined project stored bodies. Exact-artifact
-    release approval, publication and whole-history rights decisions remain
-    separate external records; no source-specific correspondence is certified here.
+    Earlier development review and later component review bind distinct inputs.
+    Exact-artifact release approval and source-specific coverage remain separate
+    decisions, not consequences of this catalogue or metadata.
 
 acknowledgements: >-
   Formal Frontier source maintainers and formalization workers, mathlib4

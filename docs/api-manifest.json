@@ -1,7 +1,7 @@
 {
   "analyzed_source_revision": "cba7734f0dddc4601fc1951d9eaca29a831e4bf7",
   "analyzed_source_tree": "52a73df34550707c12fa7d72aa82e705dbf3e69c",
-  "api_sha256": "37345a1dc76553abffc100239b5b9e9115d581dc62fcbf6d524a136c05ebc84a",
+  "api_sha256": "6221279fcf752b3e978bf056a67546c8fcc9c847900eda42b78baf4fc5fd916e",
   "docgen_revision": "97d4ecdfc8e09e7f511724c25e303d448de6a3db",
   "format": 2,
   "generator": "scripts/generate_api.py",
