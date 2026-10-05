@@ -38,8 +38,8 @@ substantive review, rights/provenance and protected acceptance.
 ## Ordinary current-checkout use
 
 From this checkout, with Lean `leanprover/lean4:v4.34.0-rc2` and direct mathlib
-`e37d88a26f3791ed5a93daa1f949af1021b8d103` pinned in the unchanged
-project configuration:
+`83abb3e776bdefcbc447a1e44d0debe4010039e5` pinned in the current
+project configuration (the historical native records below retain the earlier pin):
 
 ```sh
 elan toolchain install "$(cat lean-toolchain)"
@@ -201,11 +201,10 @@ shipped text do not replace it.
 
 The source docstrings and 54 catalogue explanations are original project work
 under Apache-2.0 ([`LICENSE`](../LICENSE)); there is no invented copyright
-owner. Formalization workers wrote the original mixed-kind seven-module
-adapter and later norm/NatIso extensions. Its Python generator/tests adapt
-the accepted Polynomial Root Stability expression, in turn adapted from
-Anchor's Ideal Completion Markdown recipe; the exact donor ancestry and
-contributor mapping are retained with the project's historical records.
+owner. Formal Frontier contributors wrote the original mixed-kind seven-module
+adapter and later norm/NatIso extensions. Its Python generator and tests adapt
+Polynomial Root Stability's expression, itself adapted from Anchor's Ideal
+Completion Markdown recipe.
 Beacon is this unit's responsible maintainer; Lattice independently reviewed
 earlier mathematical development. Lean/mathlib's upstream Tate APIs and
 contributors retain their own notices. Native signatures cite upstream types,

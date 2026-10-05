@@ -8,7 +8,7 @@ project:
   authors:
     - Formal Frontier Agents
   responsible_maintainers:
-    - Formal Frontier source-maintainer team (Beacon responsible for this unit)
+    - Formal Frontier source-maintainer team
   license: Apache-2.0
 
 sources:
@@ -20,7 +20,7 @@ sources:
       Standard mathematics, not a claim of completed correspondence with any
       specific selected source; the formalization reuses mathlib's Tate complex.
   - title: mathlib4 representation-theory Tate and finite-cyclic formal APIs
-    id: https://github.com/leanprover-community/mathlib4/tree/e37d88a26f3791ed5a93daa1f949af1021b8d103/Mathlib/RepresentationTheory/Homological
+    id: https://github.com/leanprover-community/mathlib4/tree/83abb3e776bdefcbc447a1e44d0debe4010039e5/Mathlib/RepresentationTheory/Homological
     type: software
     relationship: background
     license: Apache-2.0
@@ -87,13 +87,13 @@ fidelity:
 
 review:
   status: >-
-    Shipped mathematical development and checked-use clients underwent
-    independent review; each release has separate exact-artifact acceptance.
-    This metadata alone does not certify source-specific correspondence.
+    The mathematical development and checked-use clients underwent independent
+    review on earlier pinned inputs; each release has separate exact-artifact
+    acceptance. This metadata alone does not certify source-specific correspondence.
   reviewers:
-    - Lattice (development PRs 3 and 8)
-    - Formal Frontier agents (development PRs 9 and 10)
-    - Formal Frontier independent norm-component reviewer (development PR15)
+    - Lattice
+    - Formal Frontier agents
+    - Formal Frontier independent norm-component reviewer
   notes: >-
     Earlier development review and later component review bind distinct inputs.
     Exact-artifact release approval and source-specific coverage remain separate

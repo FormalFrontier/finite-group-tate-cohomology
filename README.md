@@ -42,7 +42,9 @@ modules may also be imported directly, using the same public declarations.
 The [complete native mixed-kind API reference](docs/API.md),
 [reproduction and provenance guide](docs/README.md) and
 [input/hash manifest](docs/api-manifest.json) also account for the public
-checked-use client module and both zero-entry reexport roots.
+checked-use client module and both zero-entry reexport roots. These documents
+record their earlier pinned source bytes, not a catalogue certified for the
+current Mathlib revision.
 
 | Module | Main API |
 | --- | --- |
@@ -97,7 +99,7 @@ root or an individual module without importing private implementation bodies.
 ## Reproduce
 
 The pins are Lean `leanprover/lean4:v4.34.0-rc2` (`lean-toolchain`) and mathlib
-`e37d88a26f3791ed5a93daa1f949af1021b8d103` (`lakefile.toml` and
+`83abb3e776bdefcbc447a1e44d0debe4010039e5` (`lakefile.toml` and
 `lake-manifest.json`). From this repository root, **fetch the matching mathlib
 cache successfully before any build**; do not silently rebuild mathlib from
 source if the cache fails:
