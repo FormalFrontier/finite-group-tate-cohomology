@@ -35,6 +35,27 @@ source's interpretation or coverage records.
   have identity, inverse and telescoping laws; these Tate comparisons are
   **objectwise**, not claimed natural in the coefficient representation.
 
+## Using the library
+
+Add the library to your `lakefile.toml`:
+
+```toml
+[[require]]
+name = "finite-group-tate-cohomology"
+git = "https://github.com/FormalFrontier/finite-group-tate-cohomology.git"
+rev = "main"
+```
+
+GitHub `main` contains reviewed releases. Lake resolves the latest release when
+first adding or updating the dependency; `lake-manifest.json` retains the resolved
+commit until the next update. To pin a particular release, replace `main` with
+its full commit hash. Dependencies between libraries use full published-release
+commit pins.
+
+```lean
+import FiniteGroupTateCohomology
+```
+
 ## Public imports and API
 
 `import FiniteGroupTateCohomology` reexports all four modules below. Individual
@@ -159,28 +180,3 @@ copyright owner. The pinned mathlib dependency provides separate Tate and
 finite-cyclic APIs, credited upstream to contributors including Yunzhou Xie,
 Yaël Dillies and Amelia Livingston. Dependency reuse is not the entire project
 contribution and does not itself establish source-specific coverage.
-
-## Measured initial-release preparation baseline (September 25, 2026)
-
-On September 25, 2026, in a fresh checkout of the ten then-current source/pin
-inputs at `9882255fffc9960eb01497ae2edce43ccf877408`, Lean `v4.34.0-rc2`,
-pinned mathlib and **successfully fetched
-8,892 precompiled cache artifacts** preceded the warning-fatal default build.
-With `LEAN_NUM_THREADS=2` (and no `LAKE_JOBS` set), `lake --wfail build`
-completed **2,432 jobs in 15.045 s real** (18.051 s user, 4.655 s system).
-The separate pinned, core-only doc-gen4 executable built 194 jobs in 125.883 s
-real; seven native `single` invocations took **2.911–3.176 s each** (21.321 s
-combined), `bibPrepass --none` 0.104 s and `fromDb` 0.244 s. The no-bibliography
-step printed `INFO: reference page disabled`, not a suppressed warning. A
-second fresh native run produced byte-identical database and all seven raw
-records; command logs and records are retained externally, not shipped here.
-The 15-GiB cgroup limit was 16,106,127,360 bytes; one-second samples of its
-shared `memory.current` reached 13,836,591,104 bytes during the default build,
-and two-second samples reached 13,521,739,776 bytes during the first native
-run. Shared cgroup accounting includes caches/other jobs, so these samples
-are **not** a measured peak RSS or a portable resource guarantee. Cache-first
-results, timings and native signatures are evidence only for those dated inputs;
-they do not certify this successor's applicable full build, complete transitive
-standard-three axiom audit (including private/generated declarations), independent
-review or maintainer acceptance. The ordinary build checks proof bodies; no
-separate stored-proof replay prerequisite applies.
