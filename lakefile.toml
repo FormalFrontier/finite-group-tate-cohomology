@@ -1,6 +1,7 @@
 name = "finite-group-tate-cohomology"
 version = "0.1.0"
 defaultTargets = ["FiniteGroupTateCohomology", "FiniteGroupTateCohomologyTests"]
+lintDriver = "batteries/runLinter"
 
 [leanOptions]
 autoImplicit = false
