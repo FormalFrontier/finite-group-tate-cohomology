@@ -1,8 +1,8 @@
 # Finite-group Tate cohomology
 
 Reusable Lean mathematics for the norm, exceptional Tate degrees and additive
-cyclic period two. The library builds on mathlib's Tate complex and finite-cyclic
-resolution, rather than duplicating them. It is independent of any particular
+cyclic period two, with a field-theoretic norm-one application. The library builds
+on mathlib's Tate complex and finite-cyclic resolution, rather than duplicating them. It is independent of any particular
 source's interpretation or coverage records.
 
 ## Headline results
@@ -35,6 +35,13 @@ source's interpretation or coverage records.
   have identity, inverse and telescoping laws; these Tate comparisons are
   **objectwise**, not claimed natural in the coefficient representation.
 
+- **Hilbert's theorem 90.** For a finite Galois extension `L/K` and a specified
+  automorphism generating the full Galois group, every norm-one element of `L`
+  is `y / g(y)` for a unit `y` of the original field. The
+  [field endpoint](FiniteGroupTateCohomology/Hilbert90.lean) permits independent
+  universes for `K` and `L`, with no characteristic or invertible-degree
+  assumption. It reuses Mathlib's cocycle theorem and finite-cyclic calculation.
+
 ## Using the library
 
 Add the library to your `lakefile.toml`:
@@ -58,9 +65,9 @@ import FiniteGroupTateCohomology
 
 ## Public imports and API
 
-`import FiniteGroupTateCohomology` reexports all four modules below. Individual
+`import FiniteGroupTateCohomology` reexports all five modules below. Individual
 modules may also be imported directly, using the same public declarations.
-The [complete native mixed-kind API reference](docs/API.md),
+The [historical native mixed-kind API reference](docs/API.md),
 [reproduction and provenance guide](docs/README.md) and
 [input/hash manifest](docs/api-manifest.json) also account for the public
 checked-use client module and both zero-entry reexport roots. These documents
@@ -69,6 +76,7 @@ current Mathlib revision.
 
 | Module | Main API |
 | --- | --- |
+| [`FiniteGroupTateCohomology.Hilbert90`](FiniteGroupTateCohomology/Hilbert90.lean) | `groupCohomology.exists_unit_div_of_norm_eq_one`, together with its universe-zero proof-agreement lemma for Mathlib's `exists_div_of_norm_eq_one`. |
 | [`FiniteGroupTateCohomology.Norm`](FiniteGroupTateCohomology/Norm.lean) | `normFromCoinvariants`, `normNatTrans`, `normNatTrans_app`, `quotientNorm`, `quotientNorm_mk`, `quotientNormNatTrans`, `quotientNormNatTrans_app` and their naturality lemmas. |
 | [`FiniteGroupTateCohomology.Basic`](FiniteGroupTateCohomology/Basic.lean) | `tateOpcyclesIsoNegOne`, `tateCyclesIsoZero`, `normSequence`, `normSequence_exact`, its first mono/last epi, `tateCohomologyNegOneIsoKernelNorm`, `tateCohomologyZeroIsoCokernelNorm`, their natural isomorphisms of coefficient functors and the two `*NatIso*_hom_app` component lemmas. |
 | [`FiniteGroupTateCohomology.CyclicModelFunctor`](FiniteGroupTateCohomology/CyclicModelFunctor.lean) | Fixed-element `Cyclic.normHomCompSubFunctor` / `subCompNormHomFunctor`, `evenModelFunctor` / `oddModelFunctor`, their maps, object/map equations and identity/composition laws. |
@@ -149,7 +157,7 @@ before treating any development commit as a versioned dependency.
 
 ## Scope and provenance
 
-The library implements the four groups above on top of pinned mathlib's Tate
+The library implements the results above on top of pinned mathlib's Tate
 complex, finite-cyclic comparison and group-(co)homology APIs. It supplies
 original project norms, exactness, natural exceptional-degree comparisons,
 fixed-element coefficient functors and generator-dependent **objectwise**
@@ -178,5 +186,7 @@ Completion lineage described in the [guide](docs/README.md). Original project
 contributions use Apache-2.0 ([`LICENSE`](LICENSE)); there is no invented
 copyright owner. The pinned mathlib dependency provides separate Tate and
 finite-cyclic APIs, credited upstream to contributors including Yunzhou Xie,
-Yaël Dillies and Amelia Livingston. Dependency reuse is not the entire project
-contribution and does not itself establish source-specific coverage.
+Yaël Dillies and Amelia Livingston. The Hilbert 90 application also uses the
+formalizations of Riccardo Brasca, Joël Riou, Kim Morrison and Junyan Xu.
+Dependency reuse is not the entire project contribution and does not itself
+establish source-specific coverage.
